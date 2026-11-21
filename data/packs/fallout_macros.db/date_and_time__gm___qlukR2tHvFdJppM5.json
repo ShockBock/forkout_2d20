@@ -1,0 +1,11 @@
+{
+	"_id": "qlukR2tHvFdJppM5",
+	"_key": "!macros!qlukR2tHvFdJppM5",
+	"author": "X4Hg8FKQis5wV2aR",
+	"command": "/**\n ***************************************************************\n * This macro opens the Date and Time window, where the GM sets\n * the game date and time, the clock speed, the weather and\n * whether conditions skip missing players. The same window is\n * in Game Settings > Forkout 2d20 > Date and Time.\n *\n * Player Hunger, Thirst and Sleep follow the game clock.\n *\n * NOTE: Only users with the Game Master user role can run this\n * macro.\n **************************************************************/\n\nfallout.apps.FalloutDateTime.open();",
+	"folder": null,
+	"img": "systems/fallout/assets/icons/macro/date-time.svg",
+	"name": "Date and Time (GM)",
+	"scope": "global",
+	"type": "script"
+}

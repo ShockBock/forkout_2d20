@@ -1,0 +1,88 @@
+/* ==========================================================================
+   Forkout 2d20: classic green-screen look outside the character sheet
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   AP tracker (Overseer AP, Party AP, Max AP): bezelled CRT screens
+   -------------------------------------------------------------------------- */
+.fallout.ap-tracker {
+	--crt: #5dff86;
+	--crt-bright: #b6ffc8;
+	--crt-dim: #2f9e52;
+	--crt-wash: rgba(93, 255, 134, 0.08);
+	--crt-dark: #062312;
+	--crt-glow: 0 0 3px rgba(93, 255, 134, 0.55);
+	--crt-font: "VT323", "Share Tech Mono", "Ubuntu Mono", "DejaVu Sans Mono",
+		"Courier New", monospace;
+}
+
+.fallout.ap-tracker .ap-resource {
+	padding: 19px 39px;
+}
+
+.fallout.ap-tracker .ap-resource.gm,
+.fallout.ap-tracker .ap-resource.party,
+.fallout.ap-tracker .ap-resource.maxAP-box {
+	background-image: url("../assets/ui/info_box.webp");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.fallout.ap-tracker .ap-resource.gm {
+	margin-right: 28px;
+}
+
+.fallout.ap-tracker .ap-resource h4 {
+	color: var(--crt);
+	text-shadow: var(--crt-glow);
+	font-family: var(--crt-font);
+	font-size: 17px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.fallout.ap-tracker .ap-resource .toggle-maxAp {
+	color: var(--crt-dim);
+}
+
+.fallout.ap-tracker .ap-resource .toggle-maxAp:hover {
+	color: var(--crt-bright);
+}
+
+.fallout.ap-tracker .ap-resource input[type="number"] {
+	background: transparent;
+	border: none;
+	border-bottom: 1px dashed var(--crt-dim);
+	border-radius: 0;
+	box-shadow: none;
+	color: var(--crt);
+	text-shadow: var(--crt-glow);
+	font-family: var(--crt-font);
+	font-size: 22px;
+	text-align: center;
+}
+
+.fallout.ap-tracker .ap-resource input[type="number"]:focus {
+	outline: none;
+	background: var(--crt-wash);
+	border-bottom-color: var(--crt);
+}
+
+.fallout.ap-tracker .ap-resource input[type="number"]:disabled {
+	color: var(--crt);
+	opacity: 1;
+}
+
+.fallout.ap-tracker .ap-resource .ap-btn {
+	background-color: var(--crt-dark);
+	border: 1px solid var(--crt-dim);
+	border-radius: 3px;
+	color: var(--crt);
+	text-shadow: var(--crt-glow);
+}
+
+.fallout.ap-tracker .ap-resource .ap-btn:hover {
+	border-color: var(--crt);
+	color: var(--crt-bright);
+	box-shadow: 0 0 4px rgba(93, 255, 134, 0.4);
+}

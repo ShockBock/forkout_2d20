@@ -1,0 +1,27 @@
+<svg height="512" width="512" style="height: 512px; width: 512px;" xmlns="http://www.w3.org/2000/svg"
+	viewBox="0 0 512 512">
+	<defs>
+		<filter id="shadow-1" height="300%" width="300%" x="-100%" y="-100%">
+			<feFlood flood-color="rgba(0, 0, 0, 1)" result="flood"></feFlood>
+			<feComposite in="flood" in2="SourceGraphic" operator="atop" result="composite"></feComposite>
+			<feGaussianBlur in="composite" stdDeviation="4" result="blur"></feGaussianBlur>
+			<feOffset dx="8" dy="8" result="offset"></feOffset>
+			<feComposite in="SourceGraphic" in2="offset" operator="over"></feComposite>
+		</filter>
+	</defs>
+	<rect fill="#3693d4" fill-opacity="1" height="512" width="512" rx="32" ry="32"></rect>
+	<g filter="url(#shadow-1)" stroke="#000000" stroke-opacity="1" stroke-width="4">
+		<!-- clock face: ring with a hole -->
+		<path fill="#f9ee78" fill-rule="evenodd"
+			d="M256 48a208 208 0 1 0 0.01 0zM256 92a164 164 0 1 1-0.01 0z"></path>
+		<!-- hour ticks -->
+		<rect fill="#f9ee78" x="244" y="104" width="24" height="44" rx="4"></rect>
+		<rect fill="#f9ee78" x="244" y="364" width="24" height="44" rx="4"></rect>
+		<rect fill="#f9ee78" x="104" y="244" width="44" height="24" rx="4"></rect>
+		<rect fill="#f9ee78" x="364" y="244" width="44" height="24" rx="4"></rect>
+		<!-- hands: hour to ~10, minute to 12 -->
+		<path fill="#f9ee78" d="M244 256V150a12 12 0 0 1 24 0v106z"></path>
+		<path fill="#f9ee78" d="M248 264l-70-58a12 12 0 0 1 15-18l70 58z"></path>
+		<circle fill="#f9ee78" cx="256" cy="256" r="22"></circle>
+	</g>
+</svg>
