@@ -3,6 +3,9 @@ name: Create Release
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write # create the release and upload its files
+
 jobs:
   build:
     runs-on: ubuntu-latest
