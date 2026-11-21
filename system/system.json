@@ -1,6 +1,6 @@
 {
 	"id": "fallout",
-	"title": "Fallout: The Roleplaying Game",
+	"title": "Forkout 2d20",
 	"description": "An unofficial system for playing the Fallout RPG from Modiphius Entertainment Ltd.",
 	"version": "11.17.1",
 	"compatibility": {
@@ -25,10 +25,11 @@
 		}
 	],
 	"esmodules": [
-		"fallout-compiled.mjs"
+		"fallout.mjs"
 	],
 	"styles": [
-		"css/fallout.css"
+		"css/fallout.css",
+		"styles/classic-sheet.css"
 	],
 	"packs": [
 		{
@@ -271,7 +272,9 @@
 	"flags": {
 		"hotReload": {
 			"extensions": [
-				"css", "hbs", "json"
+				"css",
+				"hbs",
+				"json"
 			],
 			"paths": [
 				"css",
@@ -282,7 +285,5 @@
 	},
 	"socket": true,
 	"url": "https://github.com/Muttley/foundryvtt-fallout",
-	"manifest": "https://raw.githubusercontent.com/Muttley/foundryvtt-fallout/main/system/system.json",
-	"download": "https://github.com/Muttley/foundryvtt-fallout/releases/latest/download/fallout.zip",
 	"background": "systems/fallout/assets/images/please-stand-by.webp"
 }

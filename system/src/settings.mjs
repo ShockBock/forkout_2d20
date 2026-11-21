@@ -1,4 +1,5 @@
 import { FalloutModuleArtConfig } from "./apps/FalloutModuleArtConfig.mjs";
+import { registerClockSettings } from "./system/FalloutClock.mjs";
 
 export default function registerSettings() {
 	// -------------------
@@ -37,6 +38,24 @@ export default function registerSettings() {
 	//  DYNAMIC ARTWORK
 	// -----------------
 	//
+	registerClockSettings();
+	game.settings.register(SYSTEM_ID, "weather", {
+		name: "Weather",
+		scope: "world",
+		config: false,
+		type: String,
+		default: "normal",
+		choices: { normal: "Normal", hot: "Hot", cold: "Cold" },
+	});
+	game.settings.registerMenu(SYSTEM_ID, "dateTime", {
+		name: "Date and Time",
+		label: "Set Date and Time",
+		hint: "Game date, time and clock speed.",
+		icon: "fa-solid fa-clock",
+		type: fallout.apps.FalloutDateTime,
+		restricted: true,
+	});
+
 	game.settings.registerMenu(SYSTEM_ID, "moduleArtConfiguration", {
 		name: "Module-provided Art",
 		label: "Configure Art",
@@ -128,7 +147,7 @@ export default function registerSettings() {
 
 	game.settings.register(SYSTEM_ID, "syncConditionsWithWorldClock", {
 		name: "Sync Conditions with World Clock",
-		hint: "If enabled player Hunger, Thirst and Rested conditions will be synced with game time. For this to work fully you must have installed/enabled a 3rd party world time module, such as Simple Calendar, which can be used to adjust the game time.  Otherwise time will only be advanced by the Party Sleep tool.",
+		hint: "Player Hunger, Thirst and Sleep follow the game clock (Date and Time).",
 		scope: "world",
 		config: true,
 		default: true,
@@ -137,10 +156,10 @@ export default function registerSettings() {
 
 	game.settings.register(SYSTEM_ID, "maxConditionCheckTimeJump", {
 		name: "Max Time Jump (hours)",
-		hint: "If the game time changes by more than this amount of hours in one step, then ignore it and set the last Hunger, Thirst and Sleep timestamps to the new time.",
+		hint: "A single time change bigger than this is ignored by Hunger, Thirst and Sleep (e.g. setting a new campaign date).",
 		scope: "world",
 		config: true,
-		default: 13,
+		default: 168,
 		type: Number,
 	});
 

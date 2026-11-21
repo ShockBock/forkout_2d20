@@ -15,6 +15,8 @@ import APTrackerV2 from "../apps/APTrackerV2.mjs";
 import FalloutChat from "../system/FalloutChat.mjs";
 import FalloutCompendiums from "../documents/FalloutCompendiums.mjs";
 import FalloutConditionTracker from "../system/FalloutConditionTracker.mjs";
+import * as FalloutClock from "../system/FalloutClock.mjs";
+import { orderSystemSettings } from "../system/FalloutSettingsOrder.mjs";
 import FalloutLoading from "../apps/FalloutLoading.mjs";
 import FalloutMacros from "../system/FalloutMacros.mjs";
 import FalloutUtils from "../utils/FalloutUtils.mjs";
@@ -49,6 +51,7 @@ export async function initHook() {
 		Roller2D20,
 		apps,
 		chat: FalloutChat,
+		clock: FalloutClock,
 		compendiums: FalloutCompendiums,
 		conditionTracker: new FalloutConditionTracker(),
 		debug: Logger.debug,
@@ -61,6 +64,8 @@ export async function initHook() {
 	};
 
 	registerSettings();
+	FalloutClock.initClock();
+	orderSystemSettings();
 
 	const useVariableInitiative = game.settings.get(SYSTEM_ID, "useVariableInitiative");
 	CONFIG.Combat.initiative = {
@@ -152,6 +157,12 @@ function registerDocumentSheets() {
 	});
 
 	documentCollections.Actors.registerSheet("fallout", sheets.FalloutPcSheet, {
+		label: "Fallout Character Sheet (original)",
+		types: ["character", "robot"],
+	});
+
+	documentCollections.Actors.registerSheet("fallout", sheets.FalloutClassicPcSheet, {
+		label: "Fallout Character Sheet (classic green screen)",
 		makeDefault: true,
 		types: ["character", "robot"],
 	});

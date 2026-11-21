@@ -978,6 +978,8 @@ export default class FalloutActor extends Actor {
 	}
 
 	async _updateHunger(currentWorldTime) {
+		// Cold weather halves the time of each Hunger step (core p.191-192).
+		const pace = game.settings.get(SYSTEM_ID, "weather") === "cold" ? 0.5 : 1;
 		let lastChange = this.system.conditions?.lastChanged?.hunger;
 
 		let timeElapsed = currentWorldTime - Math.abs(lastChange);
@@ -994,43 +996,43 @@ export default class FalloutActor extends Actor {
 		while (keepChecking) {
 			switch (hunger) {
 				case CONFIG.FALLOUT.CONDITIONS.hunger.full:
-					if (timeElapsed >= CONFIG.FALLOUT.ONE_HOUR_IN_SECONDS) {
+					if (timeElapsed >= (CONFIG.FALLOUT.ONE_HOUR_IN_SECONDS * pace)) {
 						fallout.debug(`Condition Tracker: [Hunger] ${this.name} Full > Sated`);
 						hunger = CONFIG.FALLOUT.CONDITIONS.hunger.sated;
-						lastChange += CONFIG.FALLOUT.ONE_HOUR_IN_SECONDS;
+						lastChange += (CONFIG.FALLOUT.ONE_HOUR_IN_SECONDS * pace);
 						changed = true;
-						timeElapsed -= CONFIG.FALLOUT.ONE_HOUR_IN_SECONDS;
+						timeElapsed -= (CONFIG.FALLOUT.ONE_HOUR_IN_SECONDS * pace);
 					}
 					else {
 						keepChecking = false;
 					}
 					break;
 				case CONFIG.FALLOUT.CONDITIONS.hunger.sated:
-					if (timeElapsed >= CONFIG.FALLOUT.FOUR_HOURS_IN_SECONDS) {
+					if (timeElapsed >= (CONFIG.FALLOUT.FOUR_HOURS_IN_SECONDS * pace)) {
 						fallout.debug(`Condition Tracker: [Hunger] ${this.name} Sated > Peckish`);
 						hunger = CONFIG.FALLOUT.CONDITIONS.hunger.peckish;
-						lastChange += CONFIG.FALLOUT.FOUR_HOURS_IN_SECONDS;
+						lastChange += (CONFIG.FALLOUT.FOUR_HOURS_IN_SECONDS * pace);
 						changed = true;
-						timeElapsed -= CONFIG.FALLOUT.FOUR_HOURS_IN_SECONDS;
+						timeElapsed -= (CONFIG.FALLOUT.FOUR_HOURS_IN_SECONDS * pace);
 					}
 					else {
 						keepChecking = false;
 					}
 					break;
 				case CONFIG.FALLOUT.CONDITIONS.hunger.peckish:
-					if (timeElapsed >= CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS) {
+					if (timeElapsed >= (CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS * pace)) {
 						fallout.debug(`Condition Tracker: [Hunger] ${this.name} Peckish > Hungry`);
 						hunger = CONFIG.FALLOUT.CONDITIONS.hunger.hungry;
-						lastChange += CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS;
+						lastChange += (CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS * pace);
 						changed = true;
-						timeElapsed -= CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS;
+						timeElapsed -= (CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS * pace);
 					}
 					else {
 						keepChecking = false;
 					}
 					break;
 				case CONFIG.FALLOUT.CONDITIONS.hunger.hungry:
-					if (timeElapsed >= CONFIG.FALLOUT.SIXTEEN_HOURS_IN_SECONDS) {
+					if (timeElapsed >= (CONFIG.FALLOUT.SIXTEEN_HOURS_IN_SECONDS * pace)) {
 						hunger = CONFIG.FALLOUT.CONDITIONS.hunger.starving;
 						fallout.debug(`Condition Tracker: [Hunger] ${this.name} Hungry > Starving`);
 						if (!this.isSleeping) {
@@ -1039,16 +1041,16 @@ export default class FalloutActor extends Actor {
 							);
 							fatigue++;
 						}
-						lastChange += CONFIG.FALLOUT.SIXTEEN_HOURS_IN_SECONDS;
+						lastChange += (CONFIG.FALLOUT.SIXTEEN_HOURS_IN_SECONDS * pace);
 						changed = true;
-						timeElapsed -= CONFIG.FALLOUT.SIXTEEN_HOURS_IN_SECONDS;
+						timeElapsed -= (CONFIG.FALLOUT.SIXTEEN_HOURS_IN_SECONDS * pace);
 					}
 					else {
 						keepChecking = false;
 					}
 					break;
 				case CONFIG.FALLOUT.CONDITIONS.hunger.starving:
-					if (timeElapsed >= CONFIG.FALLOUT.ONE_DAY_IN_SECONDS) {
+					if (timeElapsed >= (CONFIG.FALLOUT.ONE_DAY_IN_SECONDS * pace)) {
 						fallout.debug(`Condition Tracker: [Hunger] ${this.name} Starving`);
 						if (!this.isSleeping) {
 							fallout.debug(
@@ -1056,9 +1058,9 @@ export default class FalloutActor extends Actor {
 							);
 							fatigue++;
 						}
-						lastChange += CONFIG.FALLOUT.ONE_DAY_IN_SECONDS;
+						lastChange += (CONFIG.FALLOUT.ONE_DAY_IN_SECONDS * pace);
 						changed = true;
-						timeElapsed -= CONFIG.FALLOUT.ONE_DAY_IN_SECONDS;
+						timeElapsed -= (CONFIG.FALLOUT.ONE_DAY_IN_SECONDS * pace);
 					}
 					else {
 						keepChecking = false;
@@ -1082,6 +1084,8 @@ export default class FalloutActor extends Actor {
 	}
 
 	async _updateThirst(currentWorldTime) {
+		// Hot weather halves the time of each Thirst step (core p.191-192).
+		const pace = game.settings.get(SYSTEM_ID, "weather") === "hot" ? 0.5 : 1;
 		let lastChange = this.system.conditions?.lastChanged?.thirst;
 
 		let timeElapsed = currentWorldTime - Math.abs(lastChange);
@@ -1098,31 +1102,31 @@ export default class FalloutActor extends Actor {
 		while (keepChecking) {
 			switch (thirst) {
 				case CONFIG.FALLOUT.CONDITIONS.thirst.quenched:
-					if (timeElapsed >= CONFIG.FALLOUT.ONE_HOUR_IN_SECONDS) {
+					if (timeElapsed >= (CONFIG.FALLOUT.ONE_HOUR_IN_SECONDS * pace)) {
 						fallout.debug(`Condition Tracker: [Thirst] ${this.name} Quenched > Hydrated`);
 						thirst = CONFIG.FALLOUT.CONDITIONS.thirst.hydrated;
-						lastChange += CONFIG.FALLOUT.ONE_HOUR_IN_SECONDS;
+						lastChange += (CONFIG.FALLOUT.ONE_HOUR_IN_SECONDS * pace);
 						changed = true;
-						timeElapsed -= CONFIG.FALLOUT.ONE_HOUR_IN_SECONDS;
+						timeElapsed -= (CONFIG.FALLOUT.ONE_HOUR_IN_SECONDS * pace);
 					}
 					else {
 						keepChecking = false;
 					}
 					break;
 				case CONFIG.FALLOUT.CONDITIONS.thirst.hydrated:
-					if (timeElapsed >= CONFIG.FALLOUT.TWO_HOURS_IN_SECONDS) {
+					if (timeElapsed >= (CONFIG.FALLOUT.TWO_HOURS_IN_SECONDS * pace)) {
 						fallout.debug(`Condition Tracker: [Thirst] ${this.name} Hydrated > Thirsty`);
 						thirst = CONFIG.FALLOUT.CONDITIONS.thirst.thirsty;
-						lastChange += CONFIG.FALLOUT.TWO_HOURS_IN_SECONDS;
+						lastChange += (CONFIG.FALLOUT.TWO_HOURS_IN_SECONDS * pace);
 						changed = true;
-						timeElapsed -= CONFIG.FALLOUT.TWO_HOURS_IN_SECONDS;
+						timeElapsed -= (CONFIG.FALLOUT.TWO_HOURS_IN_SECONDS * pace);
 					}
 					else {
 						keepChecking = false;
 					}
 					break;
 				case CONFIG.FALLOUT.CONDITIONS.thirst.thirsty:
-					if (timeElapsed >= CONFIG.FALLOUT.FOUR_HOURS_IN_SECONDS) {
+					if (timeElapsed >= (CONFIG.FALLOUT.FOUR_HOURS_IN_SECONDS * pace)) {
 						fallout.debug(`Condition Tracker: [Thirst] ${this.name} Thirsty > Dehydrated`);
 						thirst = CONFIG.FALLOUT.CONDITIONS.thirst.dehydrated;
 						if (!this.isSleeping) {
@@ -1131,16 +1135,16 @@ export default class FalloutActor extends Actor {
 							);
 							fatigue++;
 						}
-						lastChange += CONFIG.FALLOUT.FOUR_HOURS_IN_SECONDS;
+						lastChange += (CONFIG.FALLOUT.FOUR_HOURS_IN_SECONDS * pace);
 						changed = true;
-						timeElapsed -= CONFIG.FALLOUT.FOUR_HOURS_IN_SECONDS;
+						timeElapsed -= (CONFIG.FALLOUT.FOUR_HOURS_IN_SECONDS * pace);
 					}
 					else {
 						keepChecking = false;
 					}
 					break;
 				case CONFIG.FALLOUT.CONDITIONS.thirst.dehydrated:
-					if (timeElapsed >= CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS) {
+					if (timeElapsed >= (CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS * pace)) {
 						fallout.debug(`Condition Tracker: [Thirst] ${this.name} Dehydrated`);
 						if (!this.isSleeping) {
 							fallout.debug(
@@ -1148,9 +1152,9 @@ export default class FalloutActor extends Actor {
 							);
 							fatigue++;
 						}
-						lastChange += CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS;
+						lastChange += (CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS * pace);
 						changed = true;
-						timeElapsed -= CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS;
+						timeElapsed -= (CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS * pace);
 					}
 					else {
 						keepChecking = false;
@@ -1187,7 +1191,7 @@ export default class FalloutActor extends Actor {
 		let fatigue = this.system.conditions.fatigue;
 
 		let keepChecking = true;
-		const maxIterations = 10;
+		const maxIterations = 100; // enough for a week of exhaustion steps (maxConditionCheckTimeJump)
 		let iterations = 0;
 		while (keepChecking) {
 			iterations++;
@@ -1278,8 +1282,12 @@ export default class FalloutActor extends Actor {
 		return changed;
 	}
 
-	async checkConditions(currentWorldTime) {
-		await this._checkForConditionTimeJumps(currentWorldTime);
+	/**
+	 * @param {number} currentWorldTime
+	 * @param {number} [delta]  How far the clock just moved (seconds)
+	 */
+	async checkConditions(currentWorldTime, delta = 0) {
+		await this._checkForConditionTimeJumps(currentWorldTime, delta);
 
 		let currentFatigue = this.system.conditions.fatigue;
 		const hungerChanged = await this._updateHunger(currentWorldTime);
@@ -1322,21 +1330,31 @@ export default class FalloutActor extends Actor {
 		}
 	}
 
-	async _checkForConditionTimeJumps(currentWorldTime) {
+	/**
+	 * Hunger, Thirst and Sleep count time from their lastChanged stamps.
+	 * A stamp never set (0) starts where this clock change started, so the
+	 * change still counts. A single change bigger than the Max Time Jump
+	 * setting (e.g. setting a new campaign date) is not counted: the stamps
+	 * move to the new time.
+	 */
+	async _checkForConditionTimeJumps(currentWorldTime, delta = 0) {
+		const maxJump = game.settings.get(SYSTEM_ID, "maxConditionCheckTimeJump")
+			* CONFIG.FALLOUT.ONE_HOUR_IN_SECONDS;
+		const tooBig = Math.abs(delta) > maxJump;
 		const updateData = {};
 		for (const condition of ["hunger", "sleep", "thirst"]) {
-			const wasTimeJump = fallout.utils.checkForTimeJump(
-				this.system.conditions.lastChanged[condition]
-			);
-
-			if (wasTimeJump) {
+			const stamp = this.system.conditions.lastChanged?.[condition];
+			const key = `system.conditions.lastChanged.${condition}`;
+			if (tooBig) {
 				fallout.log(`Condition Tracker: ${this.name} max time jump exceeded for ${condition}, updating lastChange value`);
-				const key = `system.conditions.lastChanged.${condition}`;
 				updateData[key] = currentWorldTime;
+			}
+			else if (!stamp) {
+				updateData[key] = currentWorldTime - Math.max(0, delta);
 			}
 		}
 		if (!foundry.utils.isEmpty(updateData)) {
-			await this.updateSource(updateData);
+			await this.update(updateData, { render: false });
 		}
 	}
 
@@ -1986,7 +2004,8 @@ export default class FalloutActor extends Actor {
 			newFatigue = hasActiveFatigue ? currentFatigue : 0;
 		}
 		else if (hours >= 1) {
-			if (newSleepStatus > 0) {
+			// One step back up, no further than tired (core p.192).
+			if (newSleepStatus > CONFIG.FALLOUT.CONDITIONS.sleep.tired) {
 				newSleepStatus--;
 			}
 		}
