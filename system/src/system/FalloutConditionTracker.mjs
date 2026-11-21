@@ -21,7 +21,9 @@ export default class FalloutConditionTracker {
 	trackedActors() {
 		const actors = new Map();
 		for (const actor of game.actors) {
-			if (actor.type === "character" && actor.hasPlayerOwner) actors.set(actor.uuid, actor);
+			if (actor.type === "character" && actor.hasPlayerOwner) {
+				actors.set(actor.uuid, actor);
+			}
 		}
 		const scenes = new Set([
 			game.scenes.active,
@@ -31,7 +33,9 @@ export default class FalloutConditionTracker {
 		for (const scene of scenes) {
 			for (const token of scene.tokens) {
 				const actor = token.actor;
-				if (actor?.type === "character") actors.set(actor.uuid, actor);
+				if (actor?.type === "character") {
+					actors.set(actor.uuid, actor);
+				}
 			}
 		}
 		return [...actors.values()].sort((a, b) => a.name.localeCompare(b.name));
@@ -62,9 +66,13 @@ export default class FalloutConditionTracker {
 	}
 
 	onUpdateWorldTime(worldTime, worldDelta) {
-		if (this.isDisabled) return;
+		if (this.isDisabled) {
+			return;
+		}
 		// One GM only, so two GMs don't both apply the same hours.
-		if (!game.user.isGM || (game.users.activeGM && game.users.activeGM !== game.user)) return;
+		if (!game.user.isGM || (game.users.activeGM && game.users.activeGM !== game.user)) {
+			return;
+		}
 
 		const previous = this.lastWorldTime ?? (worldTime - worldDelta);
 		const delta = worldTime - previous;

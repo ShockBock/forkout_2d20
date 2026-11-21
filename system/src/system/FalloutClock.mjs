@@ -56,7 +56,9 @@ export function timeOf({ year, month, day, hour = 0, minute = 0 }) {
 	month = Math.max(0, Math.min(11, month));
 	day = Math.max(1, Math.min(monthDays(year, month), day));
 	let doy = day - 1;
-	for (let m = 0; m < month; m++) doy += monthDays(year, m);
+	for (let m = 0; m < month; m++) {
+		doy += monthDays(year, m);
+	}
 	return cal().componentsToTime({ year, day: doy, hour, minute, second: 0 });
 }
 
@@ -95,9 +97,13 @@ async function tick() {
 	const rate = clampRate(game.settings.get(SYSTEM_ID, "timeRate"));
 	owed += ((now - lastTick) / 1000) * rate;
 	lastTick = now;
-	if ((owed < 60) && (rate < 60)) return;
+	if ((owed < 60) && (rate < 60)) {
+		return;
+	}
 	const seconds = Math.floor(owed);
-	if (seconds < 1) return;
+	if (seconds < 1) {
+		return;
+	}
 	owed -= seconds;
 	await game.time.advance(seconds);
 }
@@ -111,7 +117,9 @@ export const formatSheetDate = (d = dateOf()) => `${formatDay(d)}  ${pad(d.hour)
 export function refreshSheetDates() {
 	const text = formatSheetDate();
 	for (const el of document.querySelectorAll(".classic-sheet .classic-date")) {
-		if (el.textContent !== text) el.textContent = text;
+		if (el.textContent !== text) {
+			el.textContent = text;
+		}
 	}
 }
 
@@ -124,9 +132,13 @@ export function initClock() {
 		// once. An existing world time is left as it is. A world that ran
 		// Foundout's clock before carries its speed over.
 		if (writer() && !game.settings.get(SYSTEM_ID, "clockStarted")) {
-			if (game.time.worldTime === 0) await game.time.set(timeOf(START));
+			if (game.time.worldTime === 0) {
+				await game.time.set(timeOf(START));
+			}
 			const oldRate = game.settings.storage.get("world")?.getSetting?.("fo2-maps.timeRate")?.value;
-			if (oldRate !== undefined) await game.settings.set(SYSTEM_ID, "timeRate", clampRate(oldRate));
+			if (oldRate !== undefined) {
+				await game.settings.set(SYSTEM_ID, "timeRate", clampRate(oldRate));
+			}
 			await game.settings.set(SYSTEM_ID, "clockStarted", true);
 		}
 		setInterval(() => tick().catch(err => console.warn(`${SYSTEM_ID} | clock`, err)), 1000);

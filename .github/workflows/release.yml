@@ -44,8 +44,8 @@ jobs:
         allowUpdates: false
         artifacts: './system/system.json, ./fallout.zip'
         draft: false
-        makeLatest: false
+        makeLatest: true
         name: release-${{ env.systemVersion }}
-        prerelease: true
+        prerelease: false
         tag: release-${{ env.systemVersion }}
         token: ${{ secrets.GITHUB_TOKEN }}

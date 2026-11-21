@@ -47,14 +47,18 @@ export default class FalloutClassicPcSheet extends FalloutPcSheet {
 
 		// The old sheet showed the Effects tab; if a stale tab memory points at
 		// it, fall back to Status.
-		if (this._tabs?.[0]?.active === "effects") this._tabs[0].activate("status");
+		if (this._tabs?.[0]?.active === "effects") {
+			this._tabs[0].activate("status");
+		}
 
 		// Keep the backdrop's aspect ratio when the window is resized.
 		this._fitBackdrop();
 
 		// Game date and time (read-only; FalloutClock keeps it current).
 		const date = html[0].querySelector(".classic-date");
-		if (date) date.textContent = formatSheetDate();
+		if (date) {
+			date.textContent = formatSheetDate();
+		}
 
 		// Button row click sound (local to the clicking user only).
 		html.find(".classic-buttons .item").on("click", () => this._playButtonSound());
@@ -78,7 +82,9 @@ export default class FalloutClassicPcSheet extends FalloutPcSheet {
 		let swallowContextMenu = false;
 
 		screen.addEventListener("pointerdown", event => {
-			if (event.button !== 2 || !this._screenZoom[key]) return;
+			if (event.button !== 2 || !this._screenZoom[key]) {
+				return;
+			}
 			drag = {
 				id: event.pointerId,
 				startX: event.clientX,
@@ -89,11 +95,15 @@ export default class FalloutClassicPcSheet extends FalloutPcSheet {
 		});
 
 		screen.addEventListener("pointermove", event => {
-			if (!drag || event.pointerId !== drag.id) return;
+			if (!drag || event.pointerId !== drag.id) {
+				return;
+			}
 			const dx = event.clientX - drag.startX;
 			const dy = event.clientY - drag.startY;
 			if (!drag.panning) {
-				if (Math.hypot(dx, dy) < THRESHOLD) return;
+				if (Math.hypot(dx, dy) < THRESHOLD) {
+					return;
+				}
 				drag.panning = true;
 				screen.setPointerCapture(event.pointerId);
 				screen.classList.add("panning");
@@ -115,11 +125,15 @@ export default class FalloutClassicPcSheet extends FalloutPcSheet {
 		});
 
 		const end = event => {
-			if (!drag || event.pointerId !== drag.id) return;
+			if (!drag || event.pointerId !== drag.id) {
+				return;
+			}
 			if (drag.panning) {
 				swallowContextMenu = true;
 				screen.classList.remove("panning");
-				if (screen.hasPointerCapture(event.pointerId)) screen.releasePointerCapture(event.pointerId);
+				if (screen.hasPointerCapture(event.pointerId)) {
+					screen.releasePointerCapture(event.pointerId);
+				}
 			}
 			drag = null;
 		};
@@ -128,7 +142,9 @@ export default class FalloutClassicPcSheet extends FalloutPcSheet {
 
 		// The context menu after a pan must not act on what is under the cursor.
 		screen.addEventListener("contextmenu", event => {
-			if (!swallowContextMenu) return;
+			if (!swallowContextMenu) {
+				return;
+			}
 			swallowContextMenu = false;
 			event.preventDefault();
 			event.stopImmediatePropagation();
@@ -149,7 +165,9 @@ export default class FalloutClassicPcSheet extends FalloutPcSheet {
 	 * contents sit exactly where they were drawn.
 	 */
 	_onScreenWheel(event, screen, key) {
-		if (!event.shiftKey) return;
+		if (!event.shiftKey) {
+			return;
+		}
 		event.preventDefault();
 		event.stopPropagation();
 
@@ -158,9 +176,13 @@ export default class FalloutClassicPcSheet extends FalloutPcSheet {
 
 		// Shift turns a vertical wheel into a horizontal one on some systems.
 		const delta = event.deltaY || event.deltaX;
-		if (!delta) return;
+		if (!delta) {
+			return;
+		}
 		const s = Math.min(max, Math.max(min, zoom.s * (delta < 0 ? step : 1 / step)));
-		if (s === zoom.s) return;
+		if (s === zoom.s) {
+			return;
+		}
 
 		// Cursor in the screen's own (unscaled) pixels; the form itself is
 		// scaled to the window by --classic-scale.
@@ -184,7 +206,9 @@ export default class FalloutClassicPcSheet extends FalloutPcSheet {
 
 	_applyScreenZoom(screen, zoom) {
 		const layer = screen.querySelector(":scope > .classic-zoom");
-		if (!layer) return;
+		if (!layer) {
+			return;
+		}
 		const { s = 1, x = 0, y = 0 } = zoom ?? {};
 		layer.style.setProperty("--zoom", s);
 		layer.style.setProperty("--zoom-x", `${x}px`);
@@ -209,7 +233,9 @@ export default class FalloutClassicPcSheet extends FalloutPcSheet {
 		const el = this.element?.[0];
 		const content = el?.querySelector(".window-content");
 		const form = content?.querySelector("form.classic-sheet");
-		if (!form) return;
+		if (!form) {
+			return;
+		}
 		const { width, height } = this.constructor.BACKDROP;
 		const scale = Math.min(
 			content.clientWidth / width,

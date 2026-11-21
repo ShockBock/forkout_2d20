@@ -14,7 +14,9 @@ export function orderSystemSettings() {
 	SettingsConfig.prototype._prepareCategoryData = function(...args) {
 		const categories = prepare.apply(this, args);
 		const system = categories.system;
-		if (!system) return categories;
+		if (!system) {
+			return categories;
+		}
 		const keyOf = e => (e.menu ? e.key : e.field?.name)?.replace(`${SYSTEM_ID}.`, "");
 		const rank = e => {
 			const i = SETTINGS_ORDER.indexOf(keyOf(e));

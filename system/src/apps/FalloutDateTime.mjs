@@ -15,8 +15,12 @@ const sliderToRate = v => clampRate(Math.exp((Number(v) / 1000) * Math.log(MAX_R
 
 function rateHint(r) {
 	const n = x => String(Number(x.toFixed(1)));
-	if (r === 1) return "×1, real time: a game minute takes a real minute.";
-	if (r < 60) return `×${r}: a game minute takes ${n(60 / r)} real seconds.`;
+	if (r === 1) {
+		return "×1, real time: a game minute takes a real minute.";
+	}
+	if (r < 60) {
+		return `×${r}: a game minute takes ${n(60 / r)} real seconds.`;
+	}
 	return `×${r}: a game hour takes ${n(3600 / r)} real seconds.`;
 }
 
@@ -39,7 +43,9 @@ export default class FalloutDateTime extends ApplicationV2 {
 
 	/** Open the window (or bring it to the front). */
 	static open() {
-		if (!game.user.isGM) return ui.notifications.warn("Only a GM can set the date and time.");
+		if (!game.user.isGM) {
+			return ui.notifications.warn("Only a GM can set the date and time.");
+		}
 		const app = foundry.applications.instances.get(this.DEFAULT_OPTIONS.id) ?? new this();
 		return app.render({ force: true });
 	}
@@ -56,7 +62,9 @@ export default class FalloutDateTime extends ApplicationV2 {
 
 	_onClose(options) {
 		Hooks.off("updateWorldTime", this._timeHook);
-		for (const [hook, id] of this._settingHooks) Hooks.off(hook, id);
+		for (const [hook, id] of this._settingHooks) {
+			Hooks.off(hook, id);
+		}
 		super._onClose(options);
 	}
 
@@ -65,9 +73,13 @@ export default class FalloutDateTime extends ApplicationV2 {
 
 	#showSetting(setting) {
 		const [ns, key] = setting.key.split(".");
-		if (ns !== SYSTEM_ID || !FalloutDateTime.TOGGLES.includes(key)) return;
+		if (ns !== SYSTEM_ID || !FalloutDateTime.TOGGLES.includes(key)) {
+			return;
+		}
 		const box = this.element?.querySelector(`[name=${key}]`);
-		if (box) box.checked = game.settings.get(SYSTEM_ID, key);
+		if (box) {
+			box.checked = game.settings.get(SYSTEM_ID, key);
+		}
 	}
 
 	async _renderHTML() {
@@ -157,7 +169,9 @@ export default class FalloutDateTime extends ApplicationV2 {
 	#showTime() {
 		const box = this.element?.querySelector(".fallout-time");
 		const typing = document.activeElement?.matches?.("input, select");
-		if (!box || (typing && box.contains(document.activeElement))) return;
+		if (!box || (typing && box.contains(document.activeElement))) {
+			return;
+		}
 		const d = dateOf();
 		box.querySelector("[name=day]").value = d.day;
 		box.querySelector("[name=month]").value = d.month;
@@ -166,12 +180,16 @@ export default class FalloutDateTime extends ApplicationV2 {
 	}
 
 	static async #onSubmit(event, form, formData) {
-		if (!game.user.isGM) return;
+		if (!game.user.isGM) {
+			return;
+		}
 		const { day, month, year, time, timeRate, weather } = formData.object;
 
 		for (const key of FalloutDateTime.TOGGLES) {
 			const value = !!formData.object[key];
-			if (value !== game.settings.get(SYSTEM_ID, key)) await game.settings.set(SYSTEM_ID, key, value);
+			if (value !== game.settings.get(SYSTEM_ID, key)) {
+				await game.settings.set(SYSTEM_ID, key, value);
+			}
 		}
 
 		if (weather && (weather !== game.settings.get(SYSTEM_ID, "weather"))) {
@@ -182,7 +200,9 @@ export default class FalloutDateTime extends ApplicationV2 {
 			const rate = clampRate(timeRate);
 			// whole numbers only: show what was kept
 			const box = form.querySelector("[name=timeRate]");
-			if (box && (box.value !== String(rate))) box.value = rate;
+			if (box && (box.value !== String(rate))) {
+				box.value = rate;
+			}
 			form.querySelector("#fallout-dt-slider").value = rateToSlider(rate);
 			form.querySelector(".fallout-rate-hint").textContent = rateHint(rate);
 			if (rate !== game.settings.get(SYSTEM_ID, "timeRate")) {
@@ -191,14 +211,20 @@ export default class FalloutDateTime extends ApplicationV2 {
 		}
 
 		// the date: only when one of its fields changed
-		if (!event?.target?.closest?.(".fallout-time")) return;
+		if (!event?.target?.closest?.(".fallout-time")) {
+			return;
+		}
 		const [hour, minute] = String(time || "0:0").split(":").map(Number);
 		const y = Math.round(Number(year));
 		const m = Number(month);
-		if (!Number.isFinite(y) || !Number.isFinite(m)) return;
+		if (!Number.isFinite(y) || !Number.isFinite(m)) {
+			return;
+		}
 		const dd = Math.max(1, Math.min(monthDays(y, m), Math.round(Number(day)) || 1));
 		const t = timeOf({ year: y, month: m, day: dd, hour: hour || 0, minute: minute || 0 });
-		if (t !== game.time.worldTime) await game.time.set(t);
+		if (t !== game.time.worldTime) {
+			await game.time.set(t);
+		}
 	}
 
 	static async #onAdvance(event, target) {
