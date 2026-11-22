@@ -42,7 +42,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Claws",
 					"ownership": {
 						"default": 0,
@@ -280,7 +280,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Self-Destruct",
 					"ownership": {
 						"default": 0,
@@ -518,7 +518,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Arm Lasers",
 					"ownership": {
 						"default": 0,
@@ -756,7 +756,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Robot",
 					"ownership": {
 						"default": 0,
@@ -788,7 +788,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Immune to Poison",
 					"ownership": {
 						"default": 0,
@@ -820,7 +820,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Immune to Radiation",
 					"ownership": {
 						"default": 0,
@@ -852,7 +852,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Immune to Disease",
 					"ownership": {
 						"default": 0,
@@ -884,7 +884,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Arm Lasers",
 					"ownership": {
 						"default": 0,
@@ -916,7 +916,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Let Rip",
 					"ownership": {
 						"default": 0,
@@ -948,7 +948,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Self-Destruct",
 					"ownership": {
 						"default": 0,
@@ -1331,7 +1331,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Unarmed",
 					"ownership": {
 						"default": 0,
@@ -1569,7 +1569,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Immune to Poison",
 					"ownership": {
 						"default": 0,
@@ -1601,7 +1601,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Immune to Radiation",
 					"ownership": {
 						"default": 0,
@@ -1633,7 +1633,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Feral",
 					"ownership": {
 						"default": 0,
@@ -1665,7 +1665,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Ghoul",
 					"ownership": {
 						"default": 0,
@@ -1697,7 +1697,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Play Dead",
 					"ownership": {
 						"default": 0,
@@ -1729,7 +1729,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Radiation Pulse",
 					"ownership": {
 						"default": 0,
@@ -1761,7 +1761,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Radiation Pulse",
 					"ownership": {
 						"default": 0,
@@ -1999,7 +1999,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Putrid",
 					"ownership": {
 						"default": 0,
@@ -2383,7 +2383,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Bite",
 					"ownership": {
 						"default": 0,
@@ -2623,7 +2623,7 @@
 						}
 					},
 					"folder": "9QCCOyxmiCDBRWbX",
-					"img": "systems/fallout/assets/icons/items/consumable.svg",
+					"img": "systems/fallout/assets/icons/items/consumable.webp",
 					"name": "Radroach Meat",
 					"ownership": {
 						"default": 0,
@@ -2678,7 +2678,7 @@
 						}
 					},
 					"folder": "iDuO1JvotWNUCVuW",
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Immune to Radiation",
 					"ownership": {
 						"default": 0,
@@ -2712,7 +2712,7 @@
 						}
 					},
 					"folder": "iDuO1JvotWNUCVuW",
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Immune to Poison",
 					"ownership": {
 						"default": 0,
@@ -2746,7 +2746,7 @@
 						}
 					},
 					"folder": "iDuO1JvotWNUCVuW",
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Little",
 					"ownership": {
 						"default": 0,
@@ -2780,7 +2780,7 @@
 						}
 					},
 					"folder": "iDuO1JvotWNUCVuW",
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Sneaky",
 					"ownership": {
 						"default": 0,
@@ -3163,7 +3163,7 @@
 					"flags": {
 					},
 					"folder": "8HBxoFI4IGjaL6eX",
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Unarmed",
 					"ownership": {
 						"default": 0,
@@ -3401,7 +3401,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Mesmetron Beam",
 					"ownership": {
 						"default": 0,
@@ -3639,7 +3639,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Self-Destruct",
 					"ownership": {
 						"default": 0,
@@ -3877,7 +3877,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Robot",
 					"ownership": {
 						"default": 0,
@@ -3909,7 +3909,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Immune to Poison",
 					"ownership": {
 						"default": 0,
@@ -3941,7 +3941,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Immune to Radiation",
 					"ownership": {
 						"default": 0,
@@ -3973,7 +3973,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Immune to Disease",
 					"ownership": {
 						"default": 0,
@@ -4005,7 +4005,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Keen Senses",
 					"ownership": {
 						"default": 0,
@@ -4037,7 +4037,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Autorepair",
 					"ownership": {
 						"default": 0,
@@ -4069,7 +4069,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Self-Destruct",
 					"ownership": {
 						"default": 0,
@@ -4101,7 +4101,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Night Vision",
 					"ownership": {
 						"default": 0,
@@ -4483,7 +4483,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Unarmed",
 					"ownership": {
 						"default": 0,
@@ -4721,7 +4721,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Immune to Poison",
 					"ownership": {
 						"default": 0,
@@ -4753,7 +4753,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Immune to Radiation",
 					"ownership": {
 						"default": 0,
@@ -4785,7 +4785,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Feral",
 					"ownership": {
 						"default": 0,
@@ -4817,7 +4817,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Ghoul",
 					"ownership": {
 						"default": 0,
@@ -4849,7 +4849,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Play Dead",
 					"ownership": {
 						"default": 0,
@@ -4881,7 +4881,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Radiation Pulse",
 					"ownership": {
 						"default": 0,
@@ -4913,7 +4913,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Radiation Pulse",
 					"ownership": {
 						"default": 0,
@@ -5151,7 +5151,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Toughened",
 					"ownership": {
 						"default": 0,
@@ -5533,7 +5533,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Unarmed",
 					"ownership": {
 						"default": 0,
@@ -5771,7 +5771,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Immune to Poison",
 					"ownership": {
 						"default": 0,
@@ -5803,7 +5803,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Immune to Radiation",
 					"ownership": {
 						"default": 0,
@@ -5835,7 +5835,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Feral",
 					"ownership": {
 						"default": 0,
@@ -5867,7 +5867,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Ghoul",
 					"ownership": {
 						"default": 0,
@@ -5899,7 +5899,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Play Dead",
 					"ownership": {
 						"default": 0,
@@ -6922,7 +6922,7 @@
 					"flags": {
 					},
 					"folder": "8HBxoFI4IGjaL6eX",
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Knuckles",
 					"ownership": {
 						"default": 0,
@@ -7160,7 +7160,7 @@
 					"flags": {
 					},
 					"folder": "Fvz7mUEk61qB057V",
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Pipe Gun",
 					"ownership": {
 						"default": 0,
@@ -7398,7 +7398,7 @@
 					"flags": {
 					},
 					"folder": "8HBxoFI4IGjaL6eX",
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Unarmed Strike",
 					"ownership": {
 						"default": 0,
@@ -7636,7 +7636,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/ammo.svg",
+					"img": "systems/fallout/assets/icons/items/ammo.webp",
 					"name": ".38 Round",
 					"ownership": {
 						"default": 0,
@@ -7686,7 +7686,7 @@
 					"flags": {
 					},
 					"folder": "mtR30GikhQq9bCZw",
-					"img": "systems/fallout/assets/icons/items/apparel.svg",
+					"img": "systems/fallout/assets/icons/items/apparel.webp",
 					"name": "Tough Clothing",
 					"ownership": {
 						"default": 0,
@@ -7760,7 +7760,7 @@
 					"flags": {
 					},
 					"folder": "wq5Mhfa0U7SlJgyP",
-					"img": "systems/fallout/assets/icons/items/apparel.svg",
+					"img": "systems/fallout/assets/icons/items/apparel.webp",
 					"name": "Formal Hat",
 					"ownership": {
 						"default": 0,
@@ -7834,7 +7834,7 @@
 					"flags": {
 					},
 					"folder": "FiAqKiTwXAp5BbMw",
-					"img": "systems/fallout/assets/icons/items/apparel.svg",
+					"img": "systems/fallout/assets/icons/items/apparel.webp",
 					"name": "Formal Clothing",
 					"ownership": {
 						"default": 0,
@@ -7908,7 +7908,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/trait.svg",
+					"img": "systems/fallout/assets/icons/items/trait.webp",
 					"name": "Heavy Handed",
 					"ownership": {
 						"default": 0,
@@ -7940,7 +7940,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/perk.svg",
+					"img": "systems/fallout/assets/icons/items/perk.webp",
 					"name": "Scoundrel",
 					"ownership": {
 						"default": 0,
@@ -8014,7 +8014,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/perk.svg",
+					"img": "systems/fallout/assets/icons/items/perk.webp",
 					"name": "Daring Nature",
 					"ownership": {
 						"default": 0,
@@ -8088,7 +8088,7 @@
 					"flags": {
 					},
 					"folder": "9QCCOyxmiCDBRWbX",
-					"img": "systems/fallout/assets/icons/items/consumable.svg",
+					"img": "systems/fallout/assets/icons/items/consumable.webp",
 					"name": "Noodle Cup",
 					"ownership": {
 						"default": 0,
@@ -8141,7 +8141,7 @@
 					"flags": {
 					},
 					"folder": "9QCCOyxmiCDBRWbX",
-					"img": "systems/fallout/assets/icons/items/consumable.svg",
+					"img": "systems/fallout/assets/icons/items/consumable.webp",
 					"name": "Pork 'n' Beans",
 					"ownership": {
 						"default": 0,
@@ -8193,7 +8193,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/miscellany.svg",
+					"img": "systems/fallout/assets/icons/items/miscellany.webp",
 					"name": "Loaded Casino Dice",
 					"ownership": {
 						"default": 0,
@@ -9173,7 +9173,7 @@
 					"flags": {
 					},
 					"folder": "8HBxoFI4IGjaL6eX",
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Switchblade",
 					"ownership": {
 						"default": 0,
@@ -9411,7 +9411,7 @@
 					"flags": {
 					},
 					"folder": "Fvz7mUEk61qB057V",
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "10mm Pistol",
 					"ownership": {
 						"default": 0,
@@ -9649,7 +9649,7 @@
 					"flags": {
 					},
 					"folder": "8HBxoFI4IGjaL6eX",
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Unarmed Strike",
 					"ownership": {
 						"default": 0,
@@ -9887,7 +9887,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/ammo.svg",
+					"img": "systems/fallout/assets/icons/items/ammo.webp",
 					"name": "10mm Round",
 					"ownership": {
 						"default": 0,
@@ -9937,7 +9937,7 @@
 					"flags": {
 					},
 					"folder": "mtR30GikhQq9bCZw",
-					"img": "systems/fallout/assets/icons/items/apparel.svg",
+					"img": "systems/fallout/assets/icons/items/apparel.webp",
 					"name": "Vault Jumpsuit",
 					"ownership": {
 						"default": 0,
@@ -10011,7 +10011,7 @@
 					"flags": {
 					},
 					"folder": "FiAqKiTwXAp5BbMw",
-					"img": "systems/fallout/assets/icons/items/apparel.svg",
+					"img": "systems/fallout/assets/icons/items/apparel.webp",
 					"name": "Lab Coat",
 					"ownership": {
 						"default": 0,
@@ -10085,7 +10085,7 @@
 					"flags": {
 					},
 					"folder": "ajMustngwNZwFiQS",
-					"img": "systems/fallout/assets/icons/items/consumable.svg",
+					"img": "systems/fallout/assets/icons/items/consumable.webp",
 					"name": "Purified Water",
 					"ownership": {
 						"default": 0,
@@ -10138,7 +10138,7 @@
 					"flags": {
 					},
 					"folder": "n3Q9X70ZsFFCTZqu",
-					"img": "systems/fallout/assets/icons/items/consumable.svg",
+					"img": "systems/fallout/assets/icons/items/consumable.webp",
 					"name": "Stimpak",
 					"ownership": {
 						"default": 0,
@@ -10191,7 +10191,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/miscellany.svg",
+					"img": "systems/fallout/assets/icons/items/miscellany.webp",
 					"name": "Bobby Pin",
 					"ownership": {
 						"default": 0,
@@ -10231,7 +10231,7 @@
 					"flags": {
 					},
 					"folder": "n3Q9X70ZsFFCTZqu",
-					"img": "systems/fallout/assets/icons/items/consumable.svg",
+					"img": "systems/fallout/assets/icons/items/consumable.webp",
 					"name": "Mentats",
 					"ownership": {
 						"default": 0,
@@ -10284,7 +10284,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/miscellany.svg",
+					"img": "systems/fallout/assets/icons/items/miscellany.webp",
 					"name": "Vault-Tec Branded Canteen",
 					"ownership": {
 						"default": 0,
@@ -10324,7 +10324,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/miscellany.svg",
+					"img": "systems/fallout/assets/icons/items/miscellany.webp",
 					"name": "Pip-Boy",
 					"ownership": {
 						"default": 0,
@@ -10364,7 +10364,7 @@
 					"flags": {
 					},
 					"folder": "n3Q9X70ZsFFCTZqu",
-					"img": "systems/fallout/assets/icons/items/consumable.svg",
+					"img": "systems/fallout/assets/icons/items/consumable.webp",
 					"name": "Calmex",
 					"ownership": {
 						"default": 0,
@@ -10417,7 +10417,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/trait.svg",
+					"img": "systems/fallout/assets/icons/items/trait.webp",
 					"name": "Vault Kid",
 					"ownership": {
 						"default": 0,
@@ -10449,7 +10449,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/perk.svg",
+					"img": "systems/fallout/assets/icons/items/perk.webp",
 					"name": "Hacker",
 					"ownership": {
 						"default": 0,
@@ -10523,7 +10523,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/perk.svg",
+					"img": "systems/fallout/assets/icons/items/perk.webp",
 					"name": "V.A.T.S.",
 					"ownership": {
 						"default": 0,
@@ -11537,7 +11537,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/trait.svg",
+					"img": "systems/fallout/assets/icons/items/trait.webp",
 					"name": "Necrotic Post-Human",
 					"ownership": {
 						"default": 0,
@@ -11569,7 +11569,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/perk.svg",
+					"img": "systems/fallout/assets/icons/items/perk.webp",
 					"name": "Faster Healing",
 					"ownership": {
 						"default": 0,
@@ -11643,7 +11643,7 @@
 					"flags": {
 					},
 					"folder": "8HBxoFI4IGjaL6eX",
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Pipe Wrench",
 					"ownership": {
 						"default": 0,
@@ -11881,7 +11881,7 @@
 					"flags": {
 					},
 					"folder": "Fvz7mUEk61qB057V",
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Pipe Gun",
 					"ownership": {
 						"default": 0,
@@ -12119,7 +12119,7 @@
 					"flags": {
 					},
 					"folder": "RwWkQc5BwplK8JXh",
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Baseball Grenade",
 					"ownership": {
 						"default": 0,
@@ -12357,7 +12357,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/ammo.svg",
+					"img": "systems/fallout/assets/icons/items/ammo.webp",
 					"name": "Baseball Grenade",
 					"ownership": {
 						"default": 0,
@@ -12406,7 +12406,7 @@
 					"flags": {
 					},
 					"folder": "8HBxoFI4IGjaL6eX",
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Unarmed Strike",
 					"ownership": {
 						"default": 0,
@@ -12644,7 +12644,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/ammo.svg",
+					"img": "systems/fallout/assets/icons/items/ammo.webp",
 					"name": ".38 Round",
 					"ownership": {
 						"default": 0,
@@ -12694,7 +12694,7 @@
 					"flags": {
 					},
 					"folder": "FiAqKiTwXAp5BbMw",
-					"img": "systems/fallout/assets/icons/items/apparel.svg",
+					"img": "systems/fallout/assets/icons/items/apparel.webp",
 					"name": "Drifter Outfit",
 					"ownership": {
 						"default": 0,
@@ -12768,7 +12768,7 @@
 					"flags": {
 					},
 					"folder": "mtR30GikhQq9bCZw",
-					"img": "systems/fallout/assets/icons/items/apparel.svg",
+					"img": "systems/fallout/assets/icons/items/apparel.webp",
 					"name": "Casual Clothing",
 					"ownership": {
 						"default": 0,
@@ -12842,7 +12842,7 @@
 					"flags": {
 					},
 					"folder": "n3Q9X70ZsFFCTZqu",
-					"img": "systems/fallout/assets/icons/items/consumable.svg",
+					"img": "systems/fallout/assets/icons/items/consumable.webp",
 					"name": "Jet",
 					"ownership": {
 						"default": 0,
@@ -12895,7 +12895,7 @@
 					"flags": {
 					},
 					"folder": "n3Q9X70ZsFFCTZqu",
-					"img": "systems/fallout/assets/icons/items/consumable.svg",
+					"img": "systems/fallout/assets/icons/items/consumable.webp",
 					"name": "Buffout",
 					"ownership": {
 						"default": 0,
@@ -12948,7 +12948,7 @@
 					"flags": {
 					},
 					"folder": "9QCCOyxmiCDBRWbX",
-					"img": "systems/fallout/assets/icons/items/consumable.svg",
+					"img": "systems/fallout/assets/icons/items/consumable.webp",
 					"name": "Iguana on a Stick",
 					"ownership": {
 						"default": 0,
@@ -13001,7 +13001,7 @@
 					"flags": {
 					},
 					"folder": "ajMustngwNZwFiQS",
-					"img": "systems/fallout/assets/icons/items/consumable.svg",
+					"img": "systems/fallout/assets/icons/items/consumable.webp",
 					"name": "Purified Water",
 					"ownership": {
 						"default": 0,
@@ -13054,7 +13054,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/miscellany.svg",
+					"img": "systems/fallout/assets/icons/items/miscellany.webp",
 					"name": "A Pre-War Necktie",
 					"ownership": {
 						"default": 0,
@@ -14034,7 +14034,7 @@
 					"flags": {
 					},
 					"folder": "8HBxoFI4IGjaL6eX",
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Combat Knife",
 					"ownership": {
 						"default": 0,
@@ -14274,7 +14274,7 @@
 						}
 					},
 					"folder": "ymPsKJFCsVRHV6Hf",
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Laser Pistol",
 					"ownership": {
 						"default": 0,
@@ -14512,7 +14512,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/ammo.svg",
+					"img": "systems/fallout/assets/icons/items/ammo.webp",
 					"name": "Fusion Cell",
 					"ownership": {
 						"default": 0,
@@ -14562,7 +14562,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/trait.svg",
+					"img": "systems/fallout/assets/icons/items/trait.webp",
 					"name": "The Chain that Binds",
 					"ownership": {
 						"default": 0,
@@ -14594,7 +14594,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/perk.svg",
+					"img": "systems/fallout/assets/icons/items/perk.webp",
 					"name": "Healer",
 					"ownership": {
 						"default": 0,
@@ -14668,7 +14668,7 @@
 					"flags": {
 					},
 					"folder": "FiAqKiTwXAp5BbMw",
-					"img": "systems/fallout/assets/icons/items/apparel.svg",
+					"img": "systems/fallout/assets/icons/items/apparel.webp",
 					"name": "Brotherhood Scribe's Armor",
 					"ownership": {
 						"default": 0,
@@ -14742,7 +14742,7 @@
 					"flags": {
 					},
 					"folder": "wq5Mhfa0U7SlJgyP",
-					"img": "systems/fallout/assets/icons/items/apparel.svg",
+					"img": "systems/fallout/assets/icons/items/apparel.webp",
 					"name": "Brotherhood Scribe's Hat",
 					"ownership": {
 						"default": 0,
@@ -14816,7 +14816,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/miscellany.svg",
+					"img": "systems/fallout/assets/icons/items/miscellany.webp",
 					"name": "First Aid Kit",
 					"ownership": {
 						"default": 0,
@@ -14856,7 +14856,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/miscellany.svg",
+					"img": "systems/fallout/assets/icons/items/miscellany.webp",
 					"name": "Multi-Tool",
 					"ownership": {
 						"default": 0,
@@ -14938,7 +14938,7 @@
 					"flags": {
 					},
 					"folder": "n3Q9X70ZsFFCTZqu",
-					"img": "systems/fallout/assets/icons/items/consumable.svg",
+					"img": "systems/fallout/assets/icons/items/consumable.webp",
 					"name": "Stimpak",
 					"ownership": {
 						"default": 0,
@@ -14991,7 +14991,7 @@
 					"flags": {
 					},
 					"folder": "ajMustngwNZwFiQS",
-					"img": "systems/fallout/assets/icons/items/consumable.svg",
+					"img": "systems/fallout/assets/icons/items/consumable.webp",
 					"name": "Purified Water",
 					"ownership": {
 						"default": 0,
@@ -15044,7 +15044,7 @@
 					"flags": {
 					},
 					"folder": "9QCCOyxmiCDBRWbX",
-					"img": "systems/fallout/assets/icons/items/consumable.svg",
+					"img": "systems/fallout/assets/icons/items/consumable.webp",
 					"name": "Iguana on a Stick",
 					"ownership": {
 						"default": 0,
@@ -16037,7 +16037,7 @@
 					"flags": {
 					},
 					"folder": "wuijs0qVP74GkECb",
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Pincer",
 					"ownership": {
 						"default": 0,
@@ -16275,7 +16275,7 @@
 					"flags": {
 					},
 					"folder": "wuijs0qVP74GkECb",
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Buzz-Saw",
 					"ownership": {
 						"default": 0,
@@ -16513,7 +16513,7 @@
 					"flags": {
 					},
 					"folder": "wuijs0qVP74GkECb",
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Flamer",
 					"ownership": {
 						"default": 0,
@@ -16751,7 +16751,7 @@
 					"flags": {
 					},
 					"folder": "8HBxoFI4IGjaL6eX",
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Baseball Bat",
 					"ownership": {
 						"default": 0,
@@ -16989,7 +16989,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/ammo.svg",
+					"img": "systems/fallout/assets/icons/items/ammo.webp",
 					"name": "Flamer Fuel",
 					"ownership": {
 						"default": 0,
@@ -17039,7 +17039,7 @@
 					"flags": {
 					},
 					"folder": "SgneXaUay7Pkys52",
-					"img": "systems/fallout/assets/icons/items/apparel.svg",
+					"img": "systems/fallout/assets/icons/items/apparel.webp",
 					"name": "Standard Plating",
 					"ownership": {
 						"default": 0,
@@ -17100,7 +17100,7 @@
 					"flags": {
 					},
 					"folder": "SI3ySgcRWajbytaR",
-					"img": "systems/fallout/assets/icons/items/consumable.svg",
+					"img": "systems/fallout/assets/icons/items/consumable.webp",
 					"name": "Robot Repair Kit",
 					"ownership": {
 						"default": 0,
@@ -17153,7 +17153,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/robot_mod.svg",
+					"img": "systems/fallout/assets/icons/items/robot_mod.webp",
 					"name": "Integral Boiler Mod",
 					"ownership": {
 						"default": 0,
@@ -17196,7 +17196,7 @@
 					"flags": {
 					},
 					"folder": "wq5Mhfa0U7SlJgyP",
-					"img": "systems/fallout/assets/icons/items/apparel.svg",
+					"img": "systems/fallout/assets/icons/items/apparel.webp",
 					"name": "Formal Hat",
 					"ownership": {
 						"default": 0,
@@ -17270,7 +17270,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/trait.svg",
+					"img": "systems/fallout/assets/icons/items/trait.webp",
 					"name": "Mister Handy Robot",
 					"ownership": {
 						"default": 0,
@@ -17302,7 +17302,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/perk.svg",
+					"img": "systems/fallout/assets/icons/items/perk.webp",
 					"name": "Slayer",
 					"ownership": {
 						"default": 0,
@@ -18315,7 +18315,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/trait.svg",
+					"img": "systems/fallout/assets/icons/items/trait.webp",
 					"name": "Forced Evolution",
 					"ownership": {
 						"default": 0,
@@ -18347,7 +18347,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/perk.svg",
+					"img": "systems/fallout/assets/icons/items/perk.webp",
 					"name": "Comprehension",
 					"ownership": {
 						"default": 0,
@@ -18421,7 +18421,7 @@
 					"flags": {
 					},
 					"folder": "8HBxoFI4IGjaL6eX",
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Machete",
 					"ownership": {
 						"default": 0,
@@ -18659,7 +18659,7 @@
 					"flags": {
 					},
 					"folder": "8HBxoFI4IGjaL6eX",
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Unarmed Strike",
 					"ownership": {
 						"default": 0,
@@ -18897,7 +18897,7 @@
 					"flags": {
 					},
 					"folder": "8HBxoFI4IGjaL6eX",
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Baseball Bat",
 					"ownership": {
 						"default": 0,
@@ -19137,7 +19137,7 @@
 						}
 					},
 					"folder": "ymPsKJFCsVRHV6Hf",
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Pipe Rifle",
 					"ownership": {
 						"default": 0,
@@ -19375,7 +19375,7 @@
 					"flags": {
 					},
 					"folder": "KVZpmIxN7Plfso3I",
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Tomahawk",
 					"ownership": {
 						"default": 0,
@@ -19613,7 +19613,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/ammo.svg",
+					"img": "systems/fallout/assets/icons/items/ammo.webp",
 					"name": ".38 Round",
 					"ownership": {
 						"default": 0,
@@ -19663,7 +19663,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/ammo.svg",
+					"img": "systems/fallout/assets/icons/items/ammo.webp",
 					"name": "Tomahawk",
 					"ownership": {
 						"default": 0,
@@ -19712,7 +19712,7 @@
 					"flags": {
 					},
 					"folder": "R5iHl6rBHwOLy0bY",
-					"img": "systems/fallout/assets/icons/items/apparel.svg",
+					"img": "systems/fallout/assets/icons/items/apparel.webp",
 					"name": "Raider Chest Piece",
 					"ownership": {
 						"default": 0,
@@ -19786,7 +19786,7 @@
 					"flags": {
 					},
 					"folder": "R5iHl6rBHwOLy0bY",
-					"img": "systems/fallout/assets/icons/items/apparel.svg",
+					"img": "systems/fallout/assets/icons/items/apparel.webp",
 					"name": "Raider Left Arm",
 					"ownership": {
 						"default": 0,
@@ -19860,7 +19860,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/miscellany.svg",
+					"img": "systems/fallout/assets/icons/items/miscellany.webp",
 					"name": "Potted Plant",
 					"ownership": {
 						"default": 0,
@@ -19900,7 +19900,7 @@
 					"flags": {
 					},
 					"folder": "9QCCOyxmiCDBRWbX",
-					"img": "systems/fallout/assets/icons/items/consumable.svg",
+					"img": "systems/fallout/assets/icons/items/consumable.webp",
 					"name": "Iguana on a Stick",
 					"ownership": {
 						"default": 0,
@@ -19953,7 +19953,7 @@
 					"flags": {
 					},
 					"folder": "ajMustngwNZwFiQS",
-					"img": "systems/fallout/assets/icons/items/consumable.svg",
+					"img": "systems/fallout/assets/icons/items/consumable.webp",
 					"name": "Purified Water",
 					"ownership": {
 						"default": 0,
@@ -20355,7 +20355,7 @@
 						}
 					},
 					"folder": "9QCCOyxmiCDBRWbX",
-					"img": "systems/fallout/assets/icons/items/consumable.svg",
+					"img": "systems/fallout/assets/icons/items/consumable.webp",
 					"name": "Mongrel Dog Meat",
 					"ownership": {
 						"default": 0,
@@ -20408,7 +20408,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Bite",
 					"ownership": {
 						"default": 0,
@@ -20648,7 +20648,7 @@
 						}
 					},
 					"folder": "iDuO1JvotWNUCVuW",
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Keen Senses",
 					"ownership": {
 						"default": 0,
@@ -21032,7 +21032,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Laser",
 					"ownership": {
 						"default": 0,
@@ -21270,7 +21270,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Robot",
 					"ownership": {
 						"default": 0,
@@ -21302,7 +21302,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Immune to Poison",
 					"ownership": {
 						"default": 0,
@@ -21334,7 +21334,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Immune to Radiation",
 					"ownership": {
 						"default": 0,
@@ -21366,7 +21366,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Immune to Disease",
 					"ownership": {
 						"default": 0,
@@ -21398,7 +21398,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Little",
 					"ownership": {
 						"default": 0,
@@ -21430,7 +21430,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Radio Transmission",
 					"ownership": {
 						"default": 0,
@@ -21813,7 +21813,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Unarmed",
 					"ownership": {
 						"default": 0,
@@ -22051,7 +22051,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Immune to Poison",
 					"ownership": {
 						"default": 0,
@@ -22083,7 +22083,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Immune to Radiation",
 					"ownership": {
 						"default": 0,
@@ -22115,7 +22115,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Feral",
 					"ownership": {
 						"default": 0,
@@ -22147,7 +22147,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Ghoul",
 					"ownership": {
 						"default": 0,
@@ -22179,7 +22179,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Play Dead",
 					"ownership": {
 						"default": 0,
@@ -23231,7 +23231,7 @@
 					"flags": {
 					},
 					"folder": "iDuO1JvotWNUCVuW",
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "The Chain That Binds",
 					"ownership": {
 						"default": 0,
@@ -23481,7 +23481,7 @@
 					"flags": {
 					},
 					"folder": "iDuO1JvotWNUCVuW",
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Well-Equipped (Knight)",
 					"ownership": {
 						"default": 0,
@@ -23981,7 +23981,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Bite",
 					"ownership": {
 						"default": 0,
@@ -24221,7 +24221,7 @@
 						}
 					},
 					"folder": "9QCCOyxmiCDBRWbX",
-					"img": "systems/fallout/assets/icons/items/consumable.svg",
+					"img": "systems/fallout/assets/icons/items/consumable.webp",
 					"name": "Mongrel Dog Meat",
 					"ownership": {
 						"default": 0,
@@ -24276,7 +24276,7 @@
 						}
 					},
 					"folder": "iDuO1JvotWNUCVuW",
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Aggressive",
 					"ownership": {
 						"default": 0,
@@ -24310,7 +24310,7 @@
 						}
 					},
 					"folder": "iDuO1JvotWNUCVuW",
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Immune to Radiation",
 					"ownership": {
 						"default": 0,
@@ -24344,7 +24344,7 @@
 						}
 					},
 					"folder": "iDuO1JvotWNUCVuW",
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Keen Senses",
 					"ownership": {
 						"default": 0,
@@ -24378,7 +24378,7 @@
 						}
 					},
 					"folder": "iDuO1JvotWNUCVuW",
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Feral",
 					"ownership": {
 						"default": 0,
@@ -24762,7 +24762,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Chain Gun",
 					"ownership": {
 						"default": 0,
@@ -25000,7 +25000,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Unarmed",
 					"ownership": {
 						"default": 0,
@@ -25238,7 +25238,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Missile Launcher",
 					"ownership": {
 						"default": 0,
@@ -25476,7 +25476,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/weapon.svg",
+					"img": "systems/fallout/assets/icons/items/weapon.webp",
 					"name": "Self Destruct",
 					"ownership": {
 						"default": 0,
@@ -25714,7 +25714,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Robot",
 					"ownership": {
 						"default": 0,
@@ -25748,7 +25748,7 @@
 						}
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Immune to Disease",
 					"ownership": {
 						"default": 0,
@@ -25782,7 +25782,7 @@
 						}
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Immune to Poison",
 					"ownership": {
 						"default": 0,
@@ -25816,7 +25816,7 @@
 						}
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Immune to Radiation",
 					"ownership": {
 						"default": 0,
@@ -25848,7 +25848,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Big",
 					"ownership": {
 						"default": 0,
@@ -25880,7 +25880,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Keen Senses",
 					"ownership": {
 						"default": 0,
@@ -25912,7 +25912,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Aggresive",
 					"ownership": {
 						"default": 0,
@@ -25944,7 +25944,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Self-Destruct",
 					"ownership": {
 						"default": 0,
@@ -26797,7 +26797,7 @@
 					"flags": {
 					},
 					"folder": null,
-					"img": "systems/fallout/assets/icons/items/special_ability.svg",
+					"img": "systems/fallout/assets/icons/items/special_ability.webp",
 					"name": "Lab Coat",
 					"ownership": {
 						"UujBouV9gKRvnbZW": 3,

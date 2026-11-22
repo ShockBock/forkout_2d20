@@ -4,7 +4,7 @@
 	"effects": [
 	],
 	"folder": "Fvz7mUEk61qB057V",
-	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"img": "systems/fallout/assets/icons/items/weapon.webp",
 	"name": "Submachine Gun",
 	"system": {
 		"ammo": ".45 Round",
@@ -217,7 +217,7 @@
 				"flags": {
 				},
 				"folder": "x1P0jevw8Gl185wf",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Quick-Eject Mag",
 				"ownership": {
 					"default": 0
@@ -436,7 +436,7 @@
 				"flags": {
 				},
 				"folder": "KFg4RIFxfyGL2Afb",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Muzzle Break",
 				"ownership": {
 					"default": 0
@@ -655,7 +655,7 @@
 				"flags": {
 				},
 				"folder": "ejaQqUkMulo41TKV",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Powerful",
 				"ownership": {
 					"default": 0
@@ -874,7 +874,7 @@
 				"flags": {
 				},
 				"folder": "ejaQqUkMulo41TKV",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Hair Trigger",
 				"ownership": {
 					"default": 0
@@ -1093,7 +1093,7 @@
 				"flags": {
 				},
 				"folder": "DNGfd7QeFaSwX9WC",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Full Stock",
 				"ownership": {
 					"default": 0
@@ -1313,7 +1313,7 @@
 				"flags": {
 				},
 				"folder": "KFg4RIFxfyGL2Afb",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Suppressor",
 				"ownership": {
 					"default": 0
@@ -1532,7 +1532,7 @@
 				"flags": {
 				},
 				"folder": "x1P0jevw8Gl185wf",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Large Magazine",
 				"ownership": {
 					"default": 0
@@ -1751,7 +1751,7 @@
 				"flags": {
 				},
 				"folder": "KFg4RIFxfyGL2Afb",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Compensator",
 				"ownership": {
 					"default": 0
@@ -1974,7 +1974,7 @@
 				"flags": {
 				},
 				"folder": "DNGfd7QeFaSwX9WC",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Recoil Compensating Stock",
 				"ownership": {
 					"default": 0
@@ -2193,7 +2193,7 @@
 				"flags": {
 				},
 				"folder": "Brw4U78MHdGIsy7A",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Reflex Sight",
 				"ownership": {
 					"default": 0
@@ -2412,7 +2412,7 @@
 				"flags": {
 				},
 				"folder": "ejaQqUkMulo41TKV",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Hardened",
 				"ownership": {
 					"default": 0
@@ -2631,7 +2631,7 @@
 				"flags": {
 				},
 				"folder": "x1P0jevw8Gl185wf",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Large Quick-Eject Mag",
 				"ownership": {
 					"default": 0

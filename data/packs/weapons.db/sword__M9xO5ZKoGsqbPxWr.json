@@ -4,7 +4,7 @@
 	"effects": [
 	],
 	"folder": "8HBxoFI4IGjaL6eX",
-	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"img": "systems/fallout/assets/icons/items/weapon.webp",
 	"name": "Sword",
 	"system": {
 		"ammo": "",
@@ -217,7 +217,7 @@
 				"flags": {
 				},
 				"folder": "36UsRm4n8Pr0UaUy",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Stun Pack",
 				"ownership": {
 					"default": 0
@@ -436,7 +436,7 @@
 				"flags": {
 				},
 				"folder": "36UsRm4n8Pr0UaUy",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Electrified Serrated Blade",
 				"ownership": {
 					"default": 0
@@ -660,7 +660,7 @@
 				"flags": {
 				},
 				"folder": "36UsRm4n8Pr0UaUy",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Electrified Blade",
 				"ownership": {
 					"default": 0
@@ -879,7 +879,7 @@
 				"flags": {
 				},
 				"folder": "36UsRm4n8Pr0UaUy",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Serrated Blade",
 				"ownership": {
 					"default": 0

@@ -4,7 +4,7 @@
 	"effects": [
 	],
 	"folder": "8HBxoFI4IGjaL6eX",
-	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"img": "systems/fallout/assets/icons/items/weapon.webp",
 	"name": "Boxing Glove",
 	"system": {
 		"ammo": "",
@@ -217,7 +217,7 @@
 				"flags": {
 				},
 				"folder": "eTtGgz88Aq7NZ7Lt",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Lead Lining",
 				"ownership": {
 					"default": 0
@@ -436,7 +436,7 @@
 				"flags": {
 				},
 				"folder": "eTtGgz88Aq7NZ7Lt",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Spiked",
 				"ownership": {
 					"default": 0
@@ -655,7 +655,7 @@
 				"flags": {
 				},
 				"folder": "eTtGgz88Aq7NZ7Lt",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Puncturing",
 				"ownership": {
 					"default": 0

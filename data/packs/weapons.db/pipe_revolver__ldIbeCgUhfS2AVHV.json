@@ -4,7 +4,7 @@
 	"effects": [
 	],
 	"folder": "Fvz7mUEk61qB057V",
-	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"img": "systems/fallout/assets/icons/items/weapon.webp",
 	"name": "Pipe Revolver",
 	"system": {
 		"ammo": ".45 Round",
@@ -217,7 +217,7 @@
 				"flags": {
 				},
 				"folder": "KFg4RIFxfyGL2Afb",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Muzzle Break",
 				"ownership": {
 					"default": 0
@@ -436,7 +436,7 @@
 				"flags": {
 				},
 				"folder": "ejaQqUkMulo41TKV",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Powerful",
 				"ownership": {
 					"default": 0
@@ -655,7 +655,7 @@
 				"flags": {
 				},
 				"folder": "ejaQqUkMulo41TKV",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Calibrated",
 				"ownership": {
 					"default": 0
@@ -874,7 +874,7 @@
 				"flags": {
 				},
 				"folder": "FyM7apyr7UNUi2nF",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Ported",
 				"ownership": {
 					"default": 0
@@ -1093,7 +1093,7 @@
 				"flags": {
 				},
 				"folder": "KFg4RIFxfyGL2Afb",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Bayonet",
 				"ownership": {
 					"default": 0
@@ -1312,7 +1312,7 @@
 				"flags": {
 				},
 				"folder": "Brw4U78MHdGIsy7A",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Recon Scope",
 				"ownership": {
 					"LbffuJGmFEdJvA7X": 3,
@@ -1532,7 +1532,7 @@
 				"flags": {
 				},
 				"folder": "DNGfd7QeFaSwX9WC",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Marksman's Stock",
 				"ownership": {
 					"LbffuJGmFEdJvA7X": 3,
@@ -1752,7 +1752,7 @@
 				"flags": {
 				},
 				"folder": "FyM7apyr7UNUi2nF",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Long",
 				"ownership": {
 					"default": 0
@@ -1971,7 +1971,7 @@
 				"flags": {
 				},
 				"folder": "Brw4U78MHdGIsy7A",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Short Scope",
 				"ownership": {
 					"default": 0
@@ -2190,7 +2190,7 @@
 				"flags": {
 				},
 				"folder": "FyM7apyr7UNUi2nF",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Finned",
 				"ownership": {
 					"default": 0
@@ -2409,7 +2409,7 @@
 				"flags": {
 				},
 				"folder": "DNGfd7QeFaSwX9WC",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Full Stock",
 				"ownership": {
 					"default": 0
@@ -2629,7 +2629,7 @@
 				"flags": {
 				},
 				"folder": "KFg4RIFxfyGL2Afb",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Suppressor",
 				"ownership": {
 					"default": 0
@@ -2848,7 +2848,7 @@
 				"flags": {
 				},
 				"folder": "KFg4RIFxfyGL2Afb",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Compensator",
 				"ownership": {
 					"default": 0
@@ -3071,7 +3071,7 @@
 				"flags": {
 				},
 				"folder": "ejaQqUkMulo41TKV",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": ".38 Receiver",
 				"ownership": {
 					"default": 0
@@ -3290,7 +3290,7 @@
 				"flags": {
 				},
 				"folder": "DNGfd7QeFaSwX9WC",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Recoil Compensating Stock",
 				"ownership": {
 					"default": 0
@@ -3509,7 +3509,7 @@
 				"flags": {
 				},
 				"folder": "Brw4U78MHdGIsy7A",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Reflex Sight",
 				"ownership": {
 					"default": 0
@@ -3728,7 +3728,7 @@
 				"flags": {
 				},
 				"folder": "Brw4U78MHdGIsy7A",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Long Scope",
 				"ownership": {
 					"LbffuJGmFEdJvA7X": 3,
@@ -3948,7 +3948,7 @@
 				"flags": {
 				},
 				"folder": "Brw4U78MHdGIsy7A",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Short Night Vision Scope",
 				"ownership": {
 					"default": 0
@@ -4167,7 +4167,7 @@
 				"flags": {
 				},
 				"folder": "ejaQqUkMulo41TKV",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Hardened",
 				"ownership": {
 					"default": 0
@@ -4386,7 +4386,7 @@
 				"flags": {
 				},
 				"folder": "Brw4U78MHdGIsy7A",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Long Night Vision Scope",
 				"ownership": {
 					"default": 0
@@ -4605,7 +4605,7 @@
 				"flags": {
 				},
 				"folder": "ejaQqUkMulo41TKV",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": ".308 Receiver",
 				"ownership": {
 					"default": 0
@@ -4824,7 +4824,7 @@
 				"flags": {
 				},
 				"folder": "6UzbK9PPHiwhf29b",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Sharpshooter's Grip",
 				"ownership": {
 					"default": 0

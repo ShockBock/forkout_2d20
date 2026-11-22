@@ -4,7 +4,7 @@
 	"effects": [
 	],
 	"folder": "YtRXRKCnP8THWkTL",
-	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 	"name": "Boosted Capacitor",
 	"system": {
 		"attachable": true,

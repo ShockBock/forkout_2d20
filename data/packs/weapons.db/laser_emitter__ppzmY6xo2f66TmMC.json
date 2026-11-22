@@ -4,7 +4,7 @@
 	"effects": [
 	],
 	"folder": "wuijs0qVP74GkECb",
-	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"img": "systems/fallout/assets/icons/items/weapon.webp",
 	"name": "Laser Emitter",
 	"system": {
 		"ammo": "Fusion Cell",

@@ -4,7 +4,7 @@
 	"effects": [
 	],
 	"folder": "pzodZYsC8tEPTWGH",
-	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 	"name": "Electrified",
 	"system": {
 		"attachable": true,

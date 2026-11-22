@@ -4,7 +4,7 @@
 	"effects": [
 	],
 	"folder": "ScE7hQRRuS1o4Kau",
-	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"img": "systems/fallout/assets/icons/items/weapon.webp",
 	"name": "Gamma Gun",
 	"system": {
 		"ammo": "Gamma Round",
@@ -217,7 +217,7 @@
 				"flags": {
 				},
 				"folder": "bQQgCwGbfWvQnvbj",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Deep Dish",
 				"ownership": {
 					"default": 0
@@ -441,7 +441,7 @@
 				"flags": {
 				},
 				"folder": "W28sa1G86XSoOGE3",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Signal Repeater",
 				"ownership": {
 					"default": 0
@@ -660,7 +660,7 @@
 				"flags": {
 				},
 				"folder": "W28sa1G86XSoOGE3",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Electric Signal Carrier Antennae",
 				"ownership": {
 					"default": 0

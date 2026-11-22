@@ -4,7 +4,7 @@
 	"effects": [
 	],
 	"folder": "zXkvl0ffMYUzEMkw",
-	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"img": "systems/fallout/assets/icons/items/weapon.webp",
 	"name": "Junk Jet",
 	"system": {
 		"ammo": "",
@@ -217,7 +217,7 @@
 				"flags": {
 				},
 				"folder": "IEE570d0qQIojCKB",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Gunner Sight",
 				"ownership": {
 					"default": 0
@@ -436,7 +436,7 @@
 				"flags": {
 				},
 				"folder": "d5zExHtwM2EBYNfH",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Electrification Module",
 				"ownership": {
 					"default": 0
@@ -655,7 +655,7 @@
 				"flags": {
 				},
 				"folder": "d5zExHtwM2EBYNfH",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Ignition Module",
 				"ownership": {
 					"default": 0
@@ -874,7 +874,7 @@
 				"flags": {
 				},
 				"folder": "pmCxHHhktJ8HK6JZ",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Long Barrel",
 				"ownership": {
 					"default": 0
@@ -1098,7 +1098,7 @@
 				"flags": {
 				},
 				"folder": "nngcMvpqtEWovvJx",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Recoil Compensating Stock",
 				"ownership": {
 					"default": 0

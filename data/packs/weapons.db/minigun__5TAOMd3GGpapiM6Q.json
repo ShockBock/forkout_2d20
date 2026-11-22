@@ -4,7 +4,7 @@
 	"effects": [
 	],
 	"folder": "zXkvl0ffMYUzEMkw",
-	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"img": "systems/fallout/assets/icons/items/weapon.webp",
 	"name": "Minigun",
 	"system": {
 		"ammo": "5mm Round",
@@ -217,7 +217,7 @@
 				"flags": {
 				},
 				"folder": "QmScox67lhSXMIAF",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Tri-Barrel",
 				"ownership": {
 					"default": 0
@@ -436,7 +436,7 @@
 				"flags": {
 				},
 				"folder": "CX42aHQ083WuWVzF",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Gunner Sight",
 				"ownership": {
 					"default": 0
@@ -655,7 +655,7 @@
 				"flags": {
 				},
 				"folder": "quPD1XhueUUyV28a",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Shredder",
 				"ownership": {
 					"default": 0
@@ -874,7 +874,7 @@
 				"flags": {
 				},
 				"folder": "QmScox67lhSXMIAF",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Accelerated Barrel",
 				"ownership": {
 					"default": 0

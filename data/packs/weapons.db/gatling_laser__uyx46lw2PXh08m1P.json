@@ -4,7 +4,7 @@
 	"effects": [
 	],
 	"folder": "zXkvl0ffMYUzEMkw",
-	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"img": "systems/fallout/assets/icons/items/weapon.webp",
 	"name": "Gatling Laser",
 	"system": {
 		"ammo": "Fusion Core",
@@ -217,7 +217,7 @@
 				"flags": {
 				},
 				"folder": "XtgWC9Ev4cxCj2nq",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Photon Agitator",
 				"ownership": {
 					"default": 0
@@ -436,7 +436,7 @@
 				"flags": {
 				},
 				"folder": "rBxwC4kGr3U3mShx",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Reflex Sight",
 				"ownership": {
 					"default": 0
@@ -655,7 +655,7 @@
 				"flags": {
 				},
 				"folder": "wN9h6LxBvefZhQyc",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Beam Focuser",
 				"ownership": {
 					"default": 0
@@ -874,7 +874,7 @@
 				"flags": {
 				},
 				"folder": "XtgWC9Ev4cxCj2nq",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Boosted Capacitor",
 				"ownership": {
 					"default": 0
@@ -1093,7 +1093,7 @@
 				"flags": {
 				},
 				"folder": "lpSNN96iDLstljDg",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Charging Barrels",
 				"ownership": {
 					"default": 0
@@ -1316,7 +1316,7 @@
 				"flags": {
 				},
 				"folder": "XtgWC9Ev4cxCj2nq",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Photon Exciter",
 				"ownership": {
 					"default": 0
@@ -1536,7 +1536,7 @@
 				"flags": {
 				},
 				"folder": "XtgWC9Ev4cxCj2nq",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Beta Wave Tuner",
 				"ownership": {
 					"default": 0

@@ -4,7 +4,7 @@
 	"effects": [
 	],
 	"folder": "8HBxoFI4IGjaL6eX",
-	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"img": "systems/fallout/assets/icons/items/weapon.webp",
 	"name": "Deathclaw Gauntlet",
 	"system": {
 		"ammo": "",
@@ -217,7 +217,7 @@
 				"flags": {
 				},
 				"folder": "wvK8aoD30P5a8IN6",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Extra Claw",
 				"ownership": {
 					"default": 0

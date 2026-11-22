@@ -4,7 +4,7 @@
 	"effects": [
 	],
 	"folder": "Fvz7mUEk61qB057V",
-	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"img": "systems/fallout/assets/icons/items/weapon.webp",
 	"name": "Double-Barrel Shotgun",
 	"system": {
 		"ammo": "Shotgun Shell",
@@ -217,7 +217,7 @@
 				"flags": {
 				},
 				"folder": "KFg4RIFxfyGL2Afb",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Muzzle Break",
 				"ownership": {
 					"default": 0
@@ -436,7 +436,7 @@
 				"flags": {
 				},
 				"folder": "ejaQqUkMulo41TKV",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Powerful",
 				"ownership": {
 					"default": 0
@@ -655,7 +655,7 @@
 				"flags": {
 				},
 				"folder": "ejaQqUkMulo41TKV",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Hair Trigger",
 				"ownership": {
 					"default": 0
@@ -874,7 +874,7 @@
 				"flags": {
 				},
 				"folder": "FyM7apyr7UNUi2nF",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Sawed-Off",
 				"ownership": {
 					"default": 0
@@ -1093,7 +1093,7 @@
 				"flags": {
 				},
 				"folder": "FyM7apyr7UNUi2nF",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Long",
 				"ownership": {
 					"default": 0
@@ -1312,7 +1312,7 @@
 				"flags": {
 				},
 				"folder": "DNGfd7QeFaSwX9WC",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Full Stock",
 				"ownership": {
 					"default": 0
@@ -1536,7 +1536,7 @@
 				"flags": {
 				},
 				"folder": "ejaQqUkMulo41TKV",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Advanced",
 				"ownership": {
 					"default": 0
@@ -1755,7 +1755,7 @@
 				"flags": {
 				},
 				"folder": "Brw4U78MHdGIsy7A",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Reflex Sight",
 				"ownership": {
 					"default": 0
@@ -1974,7 +1974,7 @@
 				"flags": {
 				},
 				"folder": "ejaQqUkMulo41TKV",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Hardened",
 				"ownership": {
 					"default": 0

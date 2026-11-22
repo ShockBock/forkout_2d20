@@ -4,7 +4,7 @@
 	"effects": [
 	],
 	"folder": "8HBxoFI4IGjaL6eX",
-	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"img": "systems/fallout/assets/icons/items/weapon.webp",
 	"name": "Pool Cue",
 	"system": {
 		"ammo": "",
@@ -217,7 +217,7 @@
 				"flags": {
 				},
 				"folder": "5xnlOjZqwEDGq9KM",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Sharp",
 				"ownership": {
 					"default": 0
@@ -438,7 +438,7 @@
 				"flags": {
 				},
 				"folder": "5xnlOjZqwEDGq9KM",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Barbed",
 				"ownership": {
 					"default": 0

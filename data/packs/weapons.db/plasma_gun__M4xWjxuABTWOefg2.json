@@ -4,7 +4,7 @@
 	"effects": [
 	],
 	"folder": "ScE7hQRRuS1o4Kau",
-	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"img": "systems/fallout/assets/icons/items/weapon.webp",
 	"name": "Plasma Gun",
 	"system": {
 		"ammo": "Plasma Cartridge",
@@ -217,7 +217,7 @@
 				"flags": {
 				},
 				"folder": "vnStsIp1P4oNrgWt",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Recoil Compensating Stock",
 				"ownership": {
 					"default": 0
@@ -436,7 +436,7 @@
 				"flags": {
 				},
 				"folder": "hLOWqs3EQrgXutZr",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Improved Barrel",
 				"ownership": {
 					"default": 0
@@ -655,7 +655,7 @@
 				"flags": {
 				},
 				"folder": "hLOWqs3EQrgXutZr",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Splitter",
 				"ownership": {
 					"default": 0
@@ -874,7 +874,7 @@
 				"flags": {
 				},
 				"folder": "fMIRovgs2p0cBYIe",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Long Scope",
 				"ownership": {
 					"default": 0
@@ -1093,7 +1093,7 @@
 				"flags": {
 				},
 				"folder": "YtRXRKCnP8THWkTL",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Photon Agitator",
 				"ownership": {
 					"default": 0
@@ -1313,7 +1313,7 @@
 				"flags": {
 				},
 				"folder": "fMIRovgs2p0cBYIe",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Recon Scope",
 				"ownership": {
 					"default": 0
@@ -1532,7 +1532,7 @@
 				"flags": {
 				},
 				"folder": "fMIRovgs2p0cBYIe",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Short Scope",
 				"ownership": {
 					"default": 0
@@ -1751,7 +1751,7 @@
 				"flags": {
 				},
 				"folder": "YtRXRKCnP8THWkTL",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Beta Wave Tuner",
 				"ownership": {
 					"default": 0
@@ -1970,7 +1970,7 @@
 				"flags": {
 				},
 				"folder": "YtRXRKCnP8THWkTL",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Photon Exciter",
 				"ownership": {
 					"default": 0
@@ -2190,7 +2190,7 @@
 				"flags": {
 				},
 				"folder": "hLOWqs3EQrgXutZr",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Sniper Barrel",
 				"ownership": {
 					"default": 0
@@ -2412,7 +2412,7 @@
 				"flags": {
 				},
 				"folder": "fMIRovgs2p0cBYIe",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Long Night Vision Scope",
 				"ownership": {
 					"default": 0
@@ -2631,7 +2631,7 @@
 				"flags": {
 				},
 				"folder": "YtRXRKCnP8THWkTL",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Boosted Capacitor",
 				"ownership": {
 					"LbffuJGmFEdJvA7X": 3,
@@ -2851,7 +2851,7 @@
 				"flags": {
 				},
 				"folder": "vnStsIp1P4oNrgWt",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Standard Stock",
 				"ownership": {
 					"default": 0
@@ -3070,7 +3070,7 @@
 				"flags": {
 				},
 				"folder": "fMIRovgs2p0cBYIe",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Reflex Sight",
 				"ownership": {
 					"default": 0
@@ -3289,7 +3289,7 @@
 				"flags": {
 				},
 				"folder": "hLOWqs3EQrgXutZr",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Flamer Barrel",
 				"ownership": {
 					"default": 0
@@ -3508,7 +3508,7 @@
 				"flags": {
 				},
 				"folder": "fMIRovgs2p0cBYIe",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Short Night Vision Scope",
 				"ownership": {
 					"default": 0
@@ -3727,7 +3727,7 @@
 				"flags": {
 				},
 				"folder": "hLOWqs3EQrgXutZr",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Automatic Barrel",
 				"ownership": {
 					"default": 0
@@ -3946,7 +3946,7 @@
 				"flags": {
 				},
 				"folder": "vnStsIp1P4oNrgWt",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Marksman's Stock",
 				"ownership": {
 					"default": 0

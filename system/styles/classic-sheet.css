@@ -4,6 +4,16 @@
    the whole form is zoomed to the window by FalloutClassicPcSheet.
    ========================================================================== */
 
+/* The CRT font, shipped with the system so every browser and OS draws the
+   same letters (Ubuntu Mono, Ubuntu Font Licence: assets/fonts/Ubuntu-LICENCE.txt). */
+@font-face {
+	font-family: "Forkout Mono";
+	src: url("../assets/fonts/UbuntuMono.ttf") format("truetype");
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}
+
 .fallout.sheet.actor.classic-pc {
 	--crt: #5dff86;
 	--crt-bright: #b6ffc8;
@@ -12,7 +22,7 @@
 	--crt-wash: rgba(93, 255, 134, 0.08);
 	--crt-dark: #062312;
 	--crt-glow: 0 0 3px rgba(93, 255, 134, 0.55);
-	--crt-font: "VT323", "Share Tech Mono", "Ubuntu Mono", "DejaVu Sans Mono",
+	--crt-font: "Forkout Mono", "Ubuntu Mono", "DejaVu Sans Mono",
 		"Liberation Mono", "Courier New", monospace;
 	min-width: 300px;
 	min-height: 360px;

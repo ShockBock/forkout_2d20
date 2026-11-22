@@ -4,7 +4,7 @@
 	"effects": [
 	],
 	"folder": "FpqJV7XpK8RYAC0Q",
-	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"img": "systems/fallout/assets/icons/items/apparel.webp",
 	"name": "X-01 Left Leg",
 	"system": {
 		"apparelType": "powerArmor",
@@ -47,7 +47,7 @@
 				"flags": {
 				},
 				"folder": "mMrg0X7SR8UJDXyE",
-				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.webp",
 				"name": "EMP Shielding",
 				"ownership": {
 					"default": 0
@@ -101,7 +101,7 @@
 				"flags": {
 				},
 				"folder": "0sZTfWE1J7mKvvnK",
-				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.webp",
 				"name": "Explosive Shielding",
 				"ownership": {
 					"LbffuJGmFEdJvA7X": 3,
@@ -156,7 +156,7 @@
 				"flags": {
 				},
 				"folder": "0sZTfWE1J7mKvvnK",
-				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.webp",
 				"name": "Lead Plating",
 				"ownership": {
 					"default": 0
@@ -210,7 +210,7 @@
 				"flags": {
 				},
 				"folder": "0sZTfWE1J7mKvvnK",
-				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.webp",
 				"name": "Photovoltaic Plating",
 				"ownership": {
 					"default": 0
@@ -264,7 +264,7 @@
 				"flags": {
 				},
 				"folder": "JpQJNevV3gGYvAgY",
-				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.webp",
 				"name": "Explosive Vent",
 				"ownership": {
 					"default": 0
@@ -318,7 +318,7 @@
 				"flags": {
 				},
 				"folder": "e7NADGE4ZuOSX2mA",
-				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.webp",
 				"name": "Mk IV Leg",
 				"ownership": {
 					"default": 0
@@ -372,7 +372,7 @@
 				"flags": {
 				},
 				"folder": "JpQJNevV3gGYvAgY",
-				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.webp",
 				"name": "Calibrated Shocks",
 				"ownership": {
 					"default": 0
@@ -426,7 +426,7 @@
 				"flags": {
 				},
 				"folder": "0sZTfWE1J7mKvvnK",
-				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.webp",
 				"name": "Prism Shielding",
 				"ownership": {
 					"default": 0
@@ -480,7 +480,7 @@
 				"flags": {
 				},
 				"folder": "e7NADGE4ZuOSX2mA",
-				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.webp",
 				"name": "Mk III Leg",
 				"ownership": {
 					"default": 0
@@ -536,7 +536,7 @@
 				"flags": {
 				},
 				"folder": "0sZTfWE1J7mKvvnK",
-				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.webp",
 				"name": "Titanium Plating",
 				"ownership": {
 					"default": 0
@@ -593,7 +593,7 @@
 				"flags": {
 				},
 				"folder": "e7NADGE4ZuOSX2mA",
-				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.webp",
 				"name": "Mk V Leg",
 				"ownership": {
 					"default": 0
@@ -647,7 +647,7 @@
 				"flags": {
 				},
 				"folder": "JpQJNevV3gGYvAgY",
-				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.webp",
 				"name": "Overdrive Servos",
 				"ownership": {
 					"default": 0
@@ -701,7 +701,7 @@
 				"flags": {
 				},
 				"folder": "e7NADGE4ZuOSX2mA",
-				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.webp",
 				"name": "Mk II Leg",
 				"ownership": {
 					"default": 0
@@ -755,7 +755,7 @@
 				"flags": {
 				},
 				"folder": "e7NADGE4ZuOSX2mA",
-				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.webp",
 				"name": "Mk VI Leg",
 				"ownership": {
 					"default": 0

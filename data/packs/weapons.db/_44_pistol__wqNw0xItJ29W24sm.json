@@ -4,7 +4,7 @@
 	"effects": [
 	],
 	"folder": "Fvz7mUEk61qB057V",
-	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"img": "systems/fallout/assets/icons/items/weapon.webp",
 	"name": ".44 Pistol",
 	"system": {
 		"ammo": ".44 Magnum Round",
@@ -217,7 +217,7 @@
 				"flags": {
 				},
 				"folder": "ejaQqUkMulo41TKV",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Powerful",
 				"ownership": {
 					"default": 0
@@ -436,7 +436,7 @@
 				"flags": {
 				},
 				"folder": "Brw4U78MHdGIsy7A",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Recon Scope",
 				"ownership": {
 					"LbffuJGmFEdJvA7X": 3,
@@ -656,7 +656,7 @@
 				"flags": {
 				},
 				"folder": "6UzbK9PPHiwhf29b",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Comfort Grip",
 				"ownership": {
 					"default": 0
@@ -875,7 +875,7 @@
 				"flags": {
 				},
 				"folder": "FyM7apyr7UNUi2nF",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Snubnose",
 				"ownership": {
 					"default": 0
@@ -1094,7 +1094,7 @@
 				"flags": {
 				},
 				"folder": "Brw4U78MHdGIsy7A",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Short Scope",
 				"ownership": {
 					"default": 0
@@ -1313,7 +1313,7 @@
 				"flags": {
 				},
 				"folder": "FyM7apyr7UNUi2nF",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Bull Barrel",
 				"ownership": {
 					"default": 0
@@ -1537,7 +1537,7 @@
 				"flags": {
 				},
 				"folder": "ejaQqUkMulo41TKV",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Advanced",
 				"ownership": {
 					"default": 0
@@ -1756,7 +1756,7 @@
 				"flags": {
 				},
 				"folder": "Brw4U78MHdGIsy7A",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Reflex Sight",
 				"ownership": {
 					"default": 0
@@ -1975,7 +1975,7 @@
 				"flags": {
 				},
 				"folder": "ejaQqUkMulo41TKV",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Hardened",
 				"ownership": {
 					"default": 0

@@ -1,78 +1,41 @@
-<div class="fallout-dialog">
-	<div class="flexrow">
-		<div class="resource flexrow flex-group-left">
-			<p class="title-label">
-				{{localize "FALLOUT.TEMPLATES.Attribute"}}
-			</p>
-			<input
-				data-dtype="Number"
-				name="attribute"
-				type="number"
-				value="{{attribute}}"
-			>
-		</div>
+<div class="fallout-dialog forkout-roller">
+	{{!-- The roll panel: the artwork (1748 x 969 px) with controls laid over it,
+	      positioned in artwork pixels and scaled to the window by CSS. --}}
+	<div class="fr-panel">
+		<input type="hidden" name="attribute" value="{{attribute}}">
+		<input type="hidden" name="skill" value="{{skill}}">
+		<input type="hidden" name="complication" value="{{complication}}">
+		<input type="checkbox" name="tag" class="fr-hidden" {{checked tag}}>
 
-		<div class="resource flexrow flex-group-left tile">
-			<p class="title-label">
-				{{localize "TYPES.Item.skill"}}
-			</p>
-			<input
-				data-dtype="Number"
-				name="skill"
-				type="number"
-				value="{{skill}}"
-			>
-		</div>
+		{{!-- Rotary counters (strips filled in by Dialog2d20) --}}
+		<div class="fr-dial fr-attribute" data-field="attribute" data-place="all"
+			data-tooltip="{{localize 'FALLOUT.TEMPLATES.Attribute'}}"></div>
+		<div class="fr-dial fr-skill" data-field="skill" data-place="all"
+			data-tooltip="{{localize 'TYPES.Item.skill'}}"></div>
+		<div class="fr-dial fr-comp-tens" data-field="complication" data-place="tens"
+			data-tooltip="{{localize 'FALLOUT.TEMPLATES.Compl'}}"></div>
+		<div class="fr-dial fr-comp-units" data-field="complication" data-place="units"
+			data-tooltip="{{localize 'FALLOUT.TEMPLATES.Compl'}}"></div>
 
-		<div class="resource flexrow flex-group-left green">
-			<p class="title-label">
-				{{localize "FALLOUT.TEMPLATES.Tag"}}
-			</p>
-			<input
-				name="tag"
-				type="checkbox"
-				{{checked tag}}
-			>
-		</div>
+		{{!-- Plus / minus keys --}}
+		<a class="fr-key fr-attribute-up" data-field="attribute" data-delta="1"></a>
+		<a class="fr-key fr-attribute-down" data-field="attribute" data-delta="-1"></a>
+		<a class="fr-key fr-skill-up" data-field="skill" data-delta="1"></a>
+		<a class="fr-key fr-skill-down" data-field="skill" data-delta="-1"></a>
+		<a class="fr-key fr-comp-up" data-field="complication" data-delta="1"></a>
+		<a class="fr-key fr-comp-down" data-field="complication" data-delta="-1"></a>
 
-		<div class="resource flexrow flex-group-left red">
-			<p class="title-label">
-				{{localize "FALLOUT.TEMPLATES.Compl"}}
-			</p>
-			<input
-				data-dtype="Number"
-				name="complication"
-				type="number"
-				value="{{complication}}"
-			>
-		</div>
+		{{!-- Tag switch --}}
+		<a class="fr-tag{{#if tag}} lit{{/if}}"><span class="fr-tag-light"></span></a>
+
+		{{!-- Number of d20s --}}
+		<a class="dice-icon d20 fr-hex fr-hex-1" data-index="1"></a>
+		<a class="dice-icon d20 fr-hex fr-hex-2" data-index="2"></a>
+		<a class="dice-icon d20 fr-hex fr-hex-3" data-index="3"></a>
+		<a class="dice-icon d20 fr-hex fr-hex-4" data-index="4"></a>
+		<a class="dice-icon d20 fr-hex fr-hex-5" data-index="5"></a>
+		<a class="dice-icon d20 fr-hex fr-hex-6" data-index="6"></a>
+
+		<a class="fr-roll"></a>
 	</div>
-
-	<ul class="flexrow">
-		<li>
-			<a class="dice-icon d20" data-index="1">
-				1
-			</a>
-		</li>
-		<li>
-			<a class="dice-icon d20" data-index="2">
-				2
-			</a>
-		</li>
-		<li>
-			<a class="dice-icon d20" data-index="3">
-				3
-			</a>
-		</li>
-		<li>
-			<a class="dice-icon d20" data-index="4">
-				4
-			</a>
-		</li>
-		<li>
-			<a class="dice-icon d20" data-index="5">
-				5
-			</a>
-		</li>
-	</ul>
 </div>

@@ -4,7 +4,7 @@
 	"effects": [
 	],
 	"folder": "Fvz7mUEk61qB057V",
-	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"img": "systems/fallout/assets/icons/items/weapon.webp",
 	"name": "Railway Rifle",
 	"system": {
 		"ammo": "Railway Spike",
@@ -217,7 +217,7 @@
 				"flags": {
 				},
 				"folder": "KFg4RIFxfyGL2Afb",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Bayonet",
 				"ownership": {
 					"default": 0
@@ -436,7 +436,7 @@
 				"flags": {
 				},
 				"folder": "Brw4U78MHdGIsy7A",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Recon Scope",
 				"ownership": {
 					"LbffuJGmFEdJvA7X": 3,
@@ -656,7 +656,7 @@
 				"flags": {
 				},
 				"folder": "FyM7apyr7UNUi2nF",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Long",
 				"ownership": {
 					"default": 0
@@ -875,7 +875,7 @@
 				"flags": {
 				},
 				"folder": "Brw4U78MHdGIsy7A",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Short Scope",
 				"ownership": {
 					"default": 0
@@ -1099,7 +1099,7 @@
 				"flags": {
 				},
 				"folder": "ejaQqUkMulo41TKV",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Automatic Piston",
 				"ownership": {
 					"default": 0
@@ -1318,7 +1318,7 @@
 				"flags": {
 				},
 				"folder": "DNGfd7QeFaSwX9WC",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Recoil Compensating Stock",
 				"ownership": {
 					"default": 0
@@ -1537,7 +1537,7 @@
 				"flags": {
 				},
 				"folder": "Brw4U78MHdGIsy7A",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Reflex Sight",
 				"ownership": {
 					"default": 0
@@ -1756,7 +1756,7 @@
 				"flags": {
 				},
 				"folder": "Brw4U78MHdGIsy7A",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Long Scope",
 				"ownership": {
 					"LbffuJGmFEdJvA7X": 3,
@@ -1976,7 +1976,7 @@
 				"flags": {
 				},
 				"folder": "Brw4U78MHdGIsy7A",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Short Night Vision Scope",
 				"ownership": {
 					"default": 0
@@ -2195,7 +2195,7 @@
 				"flags": {
 				},
 				"folder": "Brw4U78MHdGIsy7A",
-				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.webp",
 				"name": "Long Night Vision Scope",
 				"ownership": {
 					"default": 0
