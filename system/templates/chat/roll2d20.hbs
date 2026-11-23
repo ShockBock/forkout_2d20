@@ -4,9 +4,7 @@
 		<p class="success-plaq">
 			{{localize "FALLOUT.TEMPLATES.Successes"}}:
 			{{successes}}
-			<span class="TN">
-				&nbsp;&nbsp;&nbsp;({{localize "FALLOUT.TEMPLATES.TN"}} {{successTreshold}})
-			</span>
+			<span class="TN">{{localize "FALLOUT.TEMPLATES.TargetNumber"}} {{successTreshold}}</span>
 		</p>
 		{{#ifCond complications '>' 0}}
 			<p class="complication-plaq">

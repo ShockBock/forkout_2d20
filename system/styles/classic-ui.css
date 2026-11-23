@@ -285,3 +285,117 @@
 	height: 180px;
 	border-radius: 6px;
 }
+
+/* --------------------------------------------------------------------------
+   Damage panel for weapons with a Fire Rate (artwork 1024 x 417)
+   -------------------------------------------------------------------------- */
+.forkout-roller.forkout-gun-roller {
+	--s: 0.5469;
+	width: calc(1024px * var(--s));
+	height: calc(417px * var(--s));
+}
+.forkout-gun-roller .fr-panel {
+	width: 1024px;
+	height: 417px;
+	background-image: url("../assets/ui/damage_roller_guns.webp");
+}
+.forkout-roller.forkout-gun-roller .fr-dial {
+	--cell: 90px;
+	top: 113px;
+	width: 74px;
+	height: 118px;
+}
+.forkout-roller.forkout-gun-roller .fr-strip span {
+	font-size: 76px;
+}
+.forkout-gun-roller .fr-dmg-tens { left: 127px; }
+.forkout-gun-roller .fr-dmg-units { left: 207px; }
+.forkout-gun-roller .fr-fire { left: 459px; }
+.forkout-gun-roller .fr-extra { left: 717px; }
+
+.forkout-roller.forkout-gun-roller .fr-key {
+	width: 64px;
+	height: 50px;
+	border-radius: 5px;
+}
+.forkout-gun-roller .fr-dmg-up, .forkout-gun-roller .fr-fire-up, .forkout-gun-roller .fr-extra-up { top: 117px; }
+.forkout-gun-roller .fr-dmg-down, .forkout-gun-roller .fr-fire-down, .forkout-gun-roller .fr-extra-down { top: 182px; }
+.forkout-gun-roller .fr-dmg-up, .forkout-gun-roller .fr-dmg-down { left: 300px; }
+.forkout-gun-roller .fr-fire-up, .forkout-gun-roller .fr-fire-down { left: 558px; }
+.forkout-gun-roller .fr-extra-up, .forkout-gun-roller .fr-extra-down { left: 818px; }
+
+.forkout-roller.forkout-gun-roller .fr-roll {
+	left: 64px;
+	top: 290px;
+	width: 888px;
+	height: 100px;
+}
+
+/* ---- Chat roll reports ----------------------------------------------- */
+/* Michroma (OFL, assets/fonts/Michroma-OFL.txt) for the success / complication / damage lines (was Lobster
+   and Roboto), Gothic 821 for the roll titles (was Oswald), d20 results
+   twice their old size, dice centred on a row of their own. */
+@font-face {
+	font-family: "Forkout Michroma";
+	src: url("../assets/fonts/Michroma-Regular.ttf") format("truetype");
+	font-display: swap;
+}
+@font-face {
+	font-family: "Forkout Gothic";
+	src: url("../assets/fonts/Gothic821Condensed.otf") format("opentype");
+	font-display: swap;
+}
+.fallout-chat-message .content h2 {
+	font-family: "Forkout Gothic", "Oswald", sans-serif;
+	font-weight: normal;
+}
+.fallout-chat-message .content .success-plaq,
+.fallout-chat-message .content .success-plaq .TN,
+.fallout-chat-message .content .complication-plaq,
+.fallout-chat-message .content .damage-plaq {
+	font-family: "Forkout Michroma", "Roboto", sans-serif;
+	font-weight: normal;
+	line-height: 1.2;
+}
+/* Michroma is wide: double size where the chat column allows it,
+   otherwise as large as still fits on one line (cqi = column width). */
+.fallout-chat-message .content { container-type: inline-size; }
+.fallout-chat-message .content .success-plaq {
+	font-size: min(32px, 9cqi);
+	white-space: nowrap;
+}
+/* its own line, also in messages made before Target Number had one */
+.fallout-chat-message .content .success-plaq .TN {
+	display: block;
+	font-size: min(22px, 7.4cqi);
+}
+.fallout-chat-message .content .complication-plaq {
+	margin: 2px 0 0; /* square plaques line up */
+	font-size: min(24px, 8.6cqi);
+	white-space: nowrap;
+}
+.fallout-chat-message .content .damage-plaq {
+	font-size: min(32px, 9.5cqi);
+	white-space: nowrap;
+}
+.fallout-chat-message .content .dices-result {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2px;
+}
+.fallout-chat-message .content .dices-result .dice-icon { float: none; margin-right: 0; }
+.fallout-chat-message .content .dice-icon.d20 {
+	min-width: 56px;
+	line-height: 56px;
+	background-size: 56px 56px;
+	background-position: center;
+	font-size: 32px;
+}
+/* d20 reports: Re-roll centred under the report */
+.fallout-chat-message .content > .reroll-button {
+	display: block;
+	width: auto;
+	margin: 4px auto 0;
+	padding: 0 16px;
+}

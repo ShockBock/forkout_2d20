@@ -20,9 +20,7 @@
 		<div>
 			<p class="success-plaq">
 				{{localize "FALLOUT.TEMPLATES.Successes"}}: {{repair.successes}}
-				<span class="TN">
-					&nbsp;&nbsp;&nbsp;({{localize "FALLOUT.TEMPLATES.TN"}} {{config.tn}})
-				</span>
+			<span class="TN">{{localize "FALLOUT.TEMPLATES.TargetNumber"}} {{config.tn}}</span>
 			</p>
 			{{#ifCond repair.complications '>' 0}}
 				<p class="complication-plaq">

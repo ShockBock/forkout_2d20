@@ -1,0 +1,28 @@
+<div class="fallout-dialog forkout-roller forkout-gun-roller">
+	{{!-- Damage panel for weapons with a Fire Rate: the artwork (1024 x 417 px)
+	      with controls laid over it, in artwork pixels, scaled by CSS. The
+	      hidden inputs keep the classes DialogD6 reads. --}}
+	<div class="fr-panel">
+		<input type="hidden" class="damage-dice" name="damage" value="{{diceNum}}">
+		<input type="hidden" class="fire-rate" name="fireRate" value="0">
+		<input type="hidden" class="extra-dice" name="extraDice" value="0">
+
+		<div class="fr-dial fr-dmg-tens" data-field="damage" data-place="tens"
+			data-tooltip="{{localize 'FALLOUT.UI.Damage'}}"></div>
+		<div class="fr-dial fr-dmg-units" data-field="damage" data-place="units"
+			data-tooltip="{{localize 'FALLOUT.UI.Damage'}}"></div>
+		<div class="fr-dial fr-fire" data-field="fireRate" data-place="all"
+			data-tooltip="{{fireRateTip}}"></div>
+		<div class="fr-dial fr-extra" data-field="extraDice" data-place="all"
+			data-tooltip="{{localize 'FALLOUT.TOOLTIPS.WeaponDamage.extraDice'}}"></div>
+
+		<a class="fr-key fr-dmg-up" data-field="damage" data-delta="1"></a>
+		<a class="fr-key fr-dmg-down" data-field="damage" data-delta="-1"></a>
+		<a class="fr-key fr-fire-up" data-field="fireRate" data-delta="1"></a>
+		<a class="fr-key fr-fire-down" data-field="fireRate" data-delta="-1"></a>
+		<a class="fr-key fr-extra-up" data-field="extraDice" data-delta="1"></a>
+		<a class="fr-key fr-extra-down" data-field="extraDice" data-delta="-1"></a>
+
+		<a class="fr-roll"></a>
+	</div>
+</div>

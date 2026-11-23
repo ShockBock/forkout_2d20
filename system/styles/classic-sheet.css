@@ -96,7 +96,7 @@
 	left: 46px;
 	top: 418px;
 	width: 792px;
-	height: 562px;
+	height: 552px;
 }
 
 .classic-sheet .classic-screen {
@@ -262,9 +262,9 @@
 .classic-sheet nav.classic-buttons {
 	position: absolute;
 	left: 0;
-	top: 294px;
+	top: 293px;
 	width: 886px;
-	height: 58px;
+	height: 54px;
 	margin: 0;
 	padding: 0;
 	border: none;

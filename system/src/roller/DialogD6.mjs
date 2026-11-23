@@ -1,3 +1,23 @@
+import { RollerPanel } from "./RollerPanel.mjs";
+
+/** Highest Damage and Extra Dice the gun panel's counters reach. */
+const MAX_DAMAGE = 99;
+const MAX_EXTRA_DICE = 9;
+
+/** The actor a dialog's actor UUID points at (an Actor, or a Scene token's actor). */
+function actorOf(uuid) {
+	if (!uuid) {
+		return null;
+	}
+	if (uuid.startsWith("Actor")) {
+		return fromUuidSync(uuid);
+	}
+	if (uuid.startsWith("Scene")) {
+		return fromUuidSync(uuid)?.actor ?? null;
+	}
+	return null;
+}
+
 export class DialogD6 extends Dialog {
 
 	constructor(rollName, diceNum, actor, weapon, falloutRoll, dialogData = {}, options = {}) {
@@ -8,12 +28,46 @@ export class DialogD6 extends Dialog {
 		this.weapon = weapon;
 		this.falloutRoll = falloutRoll;
 		this.options.classes = ["dice-icon"];
+		if (options.panelLimits) {
+			this.options.classes.push("forkout-roller-app");
+		}
+	}
+
+	/**
+	 * How far a weapon's Fire Rate dial can go: the weapon's Fire Rate (with
+	 * its mods), and no more extra shots than the ammo carried pays for
+	 * (ammo per shot each; a Gatling burst of +2 CD costs one shot's worth).
+	 * @returns {{max: number, weapon: number, ammo: number|null}}
+	 */
+	static fireRateLimit(weapon, actorUuid) {
+		const rate = Math.max(0, parseInt(weapon?.system?.fireRate) || 0);
+		const result = { max: rate, weapon: rate, ammo: null };
+		if (!game.settings.get("fallout", "automaticAmmunitionCalculation") || !weapon?.system?.ammo) {
+			return result;
+		}
+		const actor = actorOf(actorUuid);
+		if (!actor || !["character", "robot", "vehicle"].includes(actor.type)) {
+			return result;
+		}
+		const [ammoItems, shotsAvailable] = actor._getAvailableAmmoType(weapon.system.ammo);
+		const perStep = Math.max(1, parseInt(weapon.system.ammoPerShot) || 1);
+		result.ammo = ammoItems ? Math.floor((shotsAvailable ?? 0) / perStep) : 0;
+		result.max = Math.min(rate, result.ammo);
+		return result;
 	}
 
 	activateListeners(html) {
 		const me = this;
 
 		super.activateListeners(html);
+
+		const panelLimits = this.options.panelLimits;
+		if (panelLimits) {
+			new RollerPanel(html, panelLimits).activate();
+			html.on("click", ".fr-roll", () => {
+				this.element.find('.dialog-button[data-button="roll"]').trigger("click");
+			});
+		}
 
 		html.on("click", ".roll", async event => {
 			let extraDiceNum = parseInt(html.find(".extra-dice")[0]?.value ?? 0);
@@ -39,9 +93,13 @@ export class DialogD6 extends Dialog {
 			// CHECK IF THERE IS ENOUGH AMMO TO TRIGGER THE ROLL
 			if (game.settings.get("fallout", "automaticAmmunitionCalculation")) {
 				if (me.weapon?.system.ammo) {
+					// the gun panel: only Fire Rate shots cost ammo, whatever
+					// the Damage dial was turned to
 					let initDmg = me.falloutRoll
 						? 0
-						: me.weapon.system.damage.rating;
+						: (panelLimits
+							? parseInt(html.find(".damage-dice")[0]?.value ?? 0)
+							: me.weapon.system.damage.rating);
 
 					additionalAmmo = await me.checkAmmo(diceNum, initDmg);
 
@@ -117,7 +175,30 @@ export class DialogD6 extends Dialog {
 
 		let html;
 		let dialogWidth = 300;
-		if (weapon && !falloutRoll) {
+		let panelLimits = null;
+
+		// weapons with a Fire Rate get the gun damage panel
+		const weaponDoc = (weapon?.constructor?.name === "Object" && weapon.uuid)
+			? await fromUuid(weapon.uuid)
+			: weapon;
+		const rate = parseInt(weaponDoc?.system?.fireRate) || 0;
+
+		if (weaponDoc && !falloutRoll && (rate > 0)) {
+			const limit = DialogD6.fireRateLimit(weaponDoc, actor);
+			dialogData.diceNum = Math.max(0, Math.min(MAX_DAMAGE, parseInt(diceNum) || 0));
+			dialogData.fireRateTip = `${game.i18n.localize("FALLOUT.TEMPLATES.Fire_Rate")}: ${limit.max}`
+				+ ((limit.ammo !== null && limit.ammo < limit.weapon)
+					? ` (${limit.weapon}, ammo for ${limit.ammo})`
+					: "");
+			panelLimits = {
+				damage: [0, MAX_DAMAGE],
+				fireRate: [0, limit.max],
+				extraDice: [0, MAX_EXTRA_DICE],
+			};
+			html = await foundry.applications.handlebars.renderTemplate("systems/fallout/templates/dialogs/dialogd6-guns.hbs", dialogData);
+			dialogWidth = 560;
+		}
+		else if (weapon && !falloutRoll) {
 			html = await foundry.applications.handlebars.renderTemplate("systems/fallout/templates/dialogs/dialogd6.hbs", dialogData);
 			dialogWidth = 465;
 		}
@@ -135,7 +216,8 @@ export class DialogD6 extends Dialog {
 				},
 			},
 			close: () => { },
-		}, {width: dialogWidth});
+			default: panelLimits ? "roll" : undefined,
+		}, {width: dialogWidth, panelLimits});
 		d.render(true);
 	}
 
