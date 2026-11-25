@@ -1,0 +1,52 @@
+{{!-- Classic status tab: four cells across the top (derived, resistances,
+      status, health), the body diagram below with power armour / robot
+      mods beside it, favourites at the bottom. Same partials as the
+      original status tab, laid out for the tall main screen. --}}
+<div class="tab status classic-status" data-group="primary" data-tab="status">
+	<div class="condition-box classic-status-cells">
+		<div class="classic-cell">
+			{{> actor/pc/partials/derived }}
+		</div>
+		<div class="classic-cell">
+			{{> actor/pc/partials/resistances }}
+		</div>
+		<div class="classic-cell">
+			{{#if isRobot}}
+				{{> actor/pc/partials/statuses-robot }}
+			{{else}}
+				{{> actor/pc/partials/statuses }}
+			{{/if}}
+		</div>
+		<div class="classic-cell classic-cell-health">
+			{{> actor/pc/partials/health }}
+			{{#unless isRobot}}
+				{{> actor/pc/partials/radiation }}
+			{{/unless}}
+			{{> actor/pc/partials/injuries }}
+		</div>
+	</div>
+
+	<div class="condition-box classic-status-body">
+		{{> actor/pc/partials/pip-boy }}
+		<div class="classic-status-side">
+			{{#if isRobot}}
+				{{> actor/pc/partials/robot-mods }}
+			{{else}}
+				{{> actor/pc/partials/power-armor }}
+			{{/if}}
+		</div>
+	</div>
+
+	{{!-- Favourite weapons across the screen; addictions, diseases and
+	      conditions in three columns beneath --}}
+	<div class="status footer classic-status-footer">
+		{{> actor/pc/partials/favorite-weapons }}
+		{{#unless isRobot}}
+			<div class="classic-status-footer-cols">
+				<div>{{> actor/pc/partials/addictions}}</div>
+				<div>{{> actor/pc/partials/diseases}}</div>
+				<div>{{> actor/pc/partials/conditions}}</div>
+			</div>
+		{{/unless}}
+	</div>
+</div>

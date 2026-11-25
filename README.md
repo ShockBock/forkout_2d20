@@ -7,6 +7,18 @@
 
 # Fallout: The Roleplaying Game for Foundry VTT
 
+## Installing Forkout 2d20
+
+Forkout 2d20 is a fork of this system with a classic Fallout look. To install it, open Foundry's **Game Systems** tab, click **Install System**, paste this manifest URL into the **Manifest URL** box at the bottom, and click **Install**:
+
+```
+https://github.com/ShockBock/forkout_2d20/releases/latest/download/system.json
+```
+
+The URL always points at the newest release, so Foundry offers updates as they come out.
+
+Forkout uses the same system ID (`fallout`) as the original system, so the two can't be installed side by side: installing one replaces the other.
+
 *In 2077, the storm of nuclear war reduced most of the planet to cinders. From the ashes of nuclear devastation, a new civilization will struggle to arise. A civilization you will shape.*
 
 *How will you re-shape the world? Will you join with a plucky band of survivors to fight off all-comers and carve out your own settlement? Will you team up with pre-existing factions like the Brotherhood of Steel or Super Mutants to enforce your own ideals on the Wasteland? Ghoul or robot, paladin or raider, it’s your choice - and the consequences are yours. Welcome to the Wasteland. Welcome to the world of Fallout.*

@@ -1,53 +1,17 @@
 <form class="{{cssClass}} {{actor.type}} classic-sheet" autocomplete="off">
 
-	{{!-- Portrait filter: dark -> transparent, light -> phosphor green --}}
-	<svg class="classic-defs" width="0" height="0" aria-hidden="true">
-		<filter id="classic-green-{{actor._id}}" color-interpolation-filters="sRGB">
-			<feColorMatrix type="matrix" values="
-				0 0 0 0 0.24
-				0 0 0 0 1
-				0 0 0 0 0.42
-				0.2126 0.7152 0.0722 0 0" result="lum"/>
-			<feComponentTransfer in="lum" result="boost">
-				<feFuncA type="gamma" amplitude="1.15" exponent="1.3" offset="0"/>
-			</feComponentTransfer>
-			<feComposite in="boost" in2="SourceGraphic" operator="in"/>
-		</filter>
-	</svg>
+	{{> actor/classic/partials/frame }}
 
-	{{!-- TOP SCREEN --}}
-	<header class="classic-screen classic-screen-top">
+	{{!-- INFO SCREEN (bottom left) --}}
+	<section class="classic-screen classic-screen-info" data-screen="info">
 		<div class="classic-sweep" aria-hidden="true"></div>
 		<div class="classic-zoom">
-		<div class="classic-portrait">
-			<img
-				data-edit="img"
-				src="{{actor.img}}"
-				title="{{actor.name}}"
-				style="filter: url(#classic-green-{{actor._id}});"
-			/>
-		</div>
-
 		<div class="classic-id">
-			<input
-				class="classic-name"
-				name="name"
-				type="text"
-				value="{{actor.name}}"
-				placeholder="Name"
-			/>
-			<div class="classic-origin-row">
-				<input
-					class="classic-origin"
-					name="system.origin"
-					placeholder="{{localize 'FALLOUT.TEMPLATES.Origin'}}"
-					type="text"
-					value="{{system.origin}}"
-					data-dtype="String"
-				/>
-				{{!-- Game date, read-only; set by the GM in Date and Time --}}
-				<span class="classic-date"></span>
-			</div>
+			<input class="classic-origin" name="system.origin" type="text"
+				placeholder="{{localize 'FALLOUT.TEMPLATES.Origin'}}"
+				value="{{system.origin}}" data-dtype="String"/>
+			{{!-- Game date, read-only; set by the GM in Date and Time --}}
+			<div class="classic-date"></div>
 
 			<div class="classic-stats">
 				<div class="classic-stat">
@@ -60,52 +24,34 @@
 							{{localize "FALLOUT.LEVEL.Level"}}
 						{{/if}}
 					</label>
-					<input
-						data-dtype="Number"
-						min="0"
-						name="system.level.value"
-						type="number"
-						value="{{system.level.value}}"
-					/>
-				</div>
-
-				<div class="classic-stat">
-					<label>{{localize "FALLOUT.LEVEL.CurrentXP"}}</label>
-					<input
-						data-dtype="Number"
-						name="system.level.currentXP"
-						type="text"
-						value="{{system.level.currentXP}}"
-					/>
+					<input data-dtype="Number" min="0" name="system.level.value"
+						type="number" value="{{system.level.value}}"/>
 				</div>
 
 				<div class="classic-stat">
 					<label>
 						{{#if isPlayerCharacter}}
-							<a
-								class="availability-roll"
-								data-tooltip="{{localize 'FALLOUT.AvailabilityRoll.tooltip'}}"
-							>
+							<a class="availability-roll"
+								data-tooltip="{{localize 'FALLOUT.AvailabilityRoll.tooltip'}}">
 								<i class="fa-light fa-hand-fingers-crossed"></i>
 							</a>
 						{{/if}}
 						{{localize "FALLOUT.TEMPLATES.Luck"}}
 					</label>
-					<input
-						name="system.luckPoints"
-						type="number"
-						value="{{system.luckPoints}}"
-						min="0"
-					>
+					<input name="system.luckPoints" type="number"
+						value="{{system.luckPoints}}" min="0">
+				</div>
+
+				<div class="classic-stat">
+					<label>{{localize "FALLOUT.LEVEL.CurrentXP"}}</label>
+					<input data-dtype="Number" name="system.level.currentXP"
+						type="text" value="{{system.level.currentXP}}"/>
 				</div>
 
 				<div class="classic-stat">
 					<label>{{localize "FALLOUT.LEVEL.NextXP"}}</label>
-					<input
-						data-dtype="Number"
-						name="system.level.nextLevelXP"
-						type="text"
-						value="{{system.level.nextLevelXP}}"
+					<input data-dtype="Number" name="system.level.nextLevelXP"
+						type="text" value="{{system.level.nextLevelXP}}"
 						{{#unless disableAutoDerivedStats}}
 							{{#unless disableAutoXpTarget}}
 								data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
@@ -117,34 +63,18 @@
 			</div>
 		</div>
 		</div>
-	</header>
+	</section>
 
-	{{!-- BUTTON ROW (click regions sit over the plates in the backdrop) --}}
-	<nav class="sheet-tabs tabs classic-buttons" data-group="primary">
-		<a class="item" data-tab="status" style="--x: 46px; --w: 126px;"
-			aria-label="{{localize 'FALLOUT.TEMPLATES.Status'}}"></a>
-		<a class="item" data-tab="abilities" style="--x: 181px; --w: 145px;"
-			aria-label="{{localize 'FALLOUT.TEMPLATES.Abilities'}}"></a>
-		<a class="item" data-tab="weapons" style="--x: 334px; --w: 155px;"
-			aria-label="{{localize 'FALLOUT.TEMPLATES.Weapons'}}"></a>
-		<a class="item" data-tab="apparel" style="--x: 499px; --w: 145px;"
-			aria-label="{{localize 'FALLOUT.TEMPLATES.Apparel'}}"></a>
-		<a class="item" data-tab="inventory" style="--x: 652px; --w: 91px;"
-			aria-label="{{localize 'FALLOUT.TEMPLATES.Gear'}}"></a>
-		<a class="item" data-tab="data" style="--x: 751px; --w: 87px;"
-			aria-label="{{localize 'FALLOUT.TEMPLATES.Data'}}"></a>
-	</nav>
-
-	{{!-- BOTTOM SCREEN --}}
-	<section class="classic-screen classic-screen-bottom">
+	{{!-- MAIN SCREEN (right) --}}
+	<section class="classic-screen classic-screen-main" data-screen="main">
 		<div class="classic-sweep" aria-hidden="true"></div>
 		<div class="classic-zoom">
 		<div class="sheet-body">
-			{{> actor/pc/tabs/status }}
+			{{> actor/classic/tabs/pc-status }}
 			{{> actor/pc/tabs/abilities }}
 			{{> actor/pc/tabs/weapons }}
 			{{> actor/pc/tabs/apparel }}
-			{{> actor/pc/tabs/inventory }}
+			{{> actor/classic/tabs/pc-inventory }}
 			{{> actor/_shared-partials/data-tab }}
 		</div>
 		{{> actor/pc/partials/encumbrance }}

@@ -1,0 +1,19 @@
+<form class="{{cssClass}} {{actor.type}} classic-sheet" autocomplete="off">
+
+	{{> actor/classic/partials/frame }}
+	{{> actor/classic/partials/npc-info }}
+
+	<section class="classic-screen classic-screen-main" data-screen="main">
+		<div class="classic-sweep" aria-hidden="true"></div>
+		<div class="classic-zoom">
+		<div class="sheet-body">
+			{{> actor/creature/tabs/abilities }}
+			{{> actor/creature/tabs/butchery }}
+			{{> actor/creature/tabs/salvage }}
+			{{> actor/_shared-partials/data-tab }}
+		</div>
+		</div>
+	</section>
+
+	<div class="classic-scanlines" aria-hidden="true"></div>
+</form>

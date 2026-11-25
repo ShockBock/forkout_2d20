@@ -5,4 +5,7 @@ export {default as FalloutPcSheet} from "./FalloutPcSheet.mjs";
 export {default as FalloutScavengingLocationSheet} from "./FalloutScavengingLocationSheet.mjs";
 export {default as FalloutSettlementSheet} from "./FalloutSettlementSheet.mjs";
 export {default as FalloutVehicleSheet } from "./FalloutVehicleSheet.mjs";
-export {default as FalloutClassicPcSheet} from "./FalloutClassicPcSheet.mjs";
+export {default as FalloutClassicCreatureSheet} from "./classic/FalloutClassicCreatureSheet.mjs";
+export {default as FalloutClassicNpcSheet} from "./classic/FalloutClassicNpcSheet.mjs";
+export {default as FalloutClassicPcSheet} from "./classic/FalloutClassicPcSheet.mjs";
+export {default as FalloutClassicSettlementSheet} from "./classic/FalloutClassicSettlementSheet.mjs";

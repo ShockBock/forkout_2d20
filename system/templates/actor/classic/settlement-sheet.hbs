@@ -1,0 +1,39 @@
+<form class="{{cssClass}} {{actor.type}} classic-sheet" autocomplete="off">
+
+	{{> actor/classic/partials/frame }}
+
+	{{!-- INFO SCREEN: happiness and income --}}
+	<section class="classic-screen classic-screen-info" data-screen="info">
+		<div class="classic-sweep" aria-hidden="true"></div>
+		<div class="classic-zoom">
+		<div class="classic-id classic-id-settlement">
+			<div class="classic-stats">
+				<div class="classic-stat classic-stat-wide">
+					<label>{{localize "FALLOUT.SETTLEMENT.Happiness.label"}}</label>
+					<input data-dtype="Number" name="system.happiness.total" type="number"
+						value="{{system.happiness.total}}" disabled
+						data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"/>
+				</div>
+				<div class="classic-stat classic-stat-wide">
+					<label>{{localize "FALLOUT.SETTLEMENT.Income.label"}}</label>
+					<input data-dtype="Number" min="0" name="system.income.value"
+						type="number" value="{{system.income.value}}"/>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+
+	<section class="classic-screen classic-screen-main" data-screen="main">
+		<div class="classic-sweep" aria-hidden="true"></div>
+		<div class="classic-zoom">
+		<div class="sheet-body">
+			{{> actor/settlement/tabs/status }}
+			{{> actor/settlement/tabs/stockpile }}
+			{{> actor/_shared-partials/data-tab }}
+		</div>
+		</div>
+	</section>
+
+	<div class="classic-scanlines" aria-hidden="true"></div>
+</form>

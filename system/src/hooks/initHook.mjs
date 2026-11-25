@@ -147,11 +147,23 @@ function registerDocumentSheets() {
 	documentCollections.Items.unregisterSheet("core", foundry.appv1.sheets.ItemSheet);
 
 	documentCollections.Actors.registerSheet("fallout", sheets.FalloutCreatureSheet, {
+		label: "Fallout Creature Sheet (original)",
+		types: ["creature"],
+	});
+
+	documentCollections.Actors.registerSheet("fallout", sheets.FalloutClassicCreatureSheet, {
+		label: "Fallout Creature Sheet (classic green screen)",
 		makeDefault: true,
 		types: ["creature"],
 	});
 
 	documentCollections.Actors.registerSheet("fallout", sheets.FalloutNpcSheet, {
+		label: "Fallout NPC Sheet (original)",
+		types: ["npc"],
+	});
+
+	documentCollections.Actors.registerSheet("fallout", sheets.FalloutClassicNpcSheet, {
+		label: "Fallout NPC Sheet (classic green screen)",
 		makeDefault: true,
 		types: ["npc"],
 	});
@@ -173,6 +185,12 @@ function registerDocumentSheets() {
 	});
 
 	documentCollections.Actors.registerSheet("fallout", sheets.FalloutSettlementSheet, {
+		label: "Fallout Settlement Sheet (original)",
+		types: ["settlement"],
+	});
+
+	documentCollections.Actors.registerSheet("fallout", sheets.FalloutClassicSettlementSheet, {
+		label: "Fallout Settlement Sheet (classic green screen)",
 		makeDefault: true,
 		types: ["settlement"],
 	});

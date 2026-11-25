@@ -1,0 +1,78 @@
+{{!-- Classic gear tab: one column. Everyday items first, materials last,
+      then all mods under one MODS divider. A click on a section title
+      folds it away (ClassicSheetMixin keeps the folds across renders). --}}
+<div class="tab inventory classic-gear" data-group="primary" data-tab="inventory">
+
+	{{> actor/pc/partials/currency }}
+
+	<section class="classic-fold" data-fold="consumable">
+		{{> actor/pc/partials/inventory-block
+			blockTitle=(localize "FALLOUT.UI.CONSUMABLES")
+			createTitle=(localize "FALLOUT.TEMPLATES.Create_Consumable")
+			items=itemsByType.consumable
+			type="consumable"
+		}}
+	</section>
+
+	<section class="classic-fold" data-fold="books_and_magz">
+		{{> actor/pc/partials/inventory-block
+			blockTitle=(localize "FALLOUT.UI.BOOKS_AND_MAGZS")
+			createTitle=(localize "FALLOUT.TEMPLATES.Create_books_and_magz")
+			items=itemsByType.books_and_magz
+			type="books_and_magz"
+		}}
+	</section>
+
+	<section class="classic-fold" data-fold="miscellany">
+		{{> actor/pc/partials/inventory-block
+			blockTitle=(localize "FALLOUT.UI.MISCELLANY")
+			createTitle=(localize "FALLOUT.TEMPLATES.Create_Miscellany")
+			items=itemsByType.miscellany
+			type="miscellany"
+		}}
+	</section>
+
+	<section class="classic-fold" data-fold="unsorted">
+		{{> actor/pc/partials/inventory-block
+			blockTitle=(localize "FALLOUT.UI.UNSORTED")
+			items=inventory
+			noCreate=true
+		}}
+	</section>
+
+	<section class="classic-fold" data-fold="materials">
+		{{> actor/_shared-partials/materials
+			materials=inventoryMaterials
+		}}
+	</section>
+
+	<section class="classic-fold classic-fold-group" data-fold="mods">
+		<h3 class="classic-divider">{{localize "FALLOUT.MODS.mods"}}</h3>
+		<div class="classic-fold-body">
+			<section class="classic-fold" data-fold="apparel_mod">
+				{{> actor/pc/partials/inventory-block
+					blockTitle=(localize "FALLOUT.UI.APPAREL_MODS")
+					createTitle=(localize "FALLOUT.TEMPLATES.Create_Apparel_Mod")
+					items=itemsByType.apparel_mod
+					type="apparel_mod"
+				}}
+			</section>
+			<section class="classic-fold" data-fold="weapon_mod">
+				{{> actor/pc/partials/inventory-block
+					blockTitle=(localize "FALLOUT.UI.WEAPON_MODS")
+					createTitle=(localize "FALLOUT.TEMPLATES.Create_Weapon_Mod")
+					items=itemsByType.weapon_mod
+					type="weapon_mod"
+				}}
+			</section>
+			<section class="classic-fold" data-fold="robot_mod">
+				{{> actor/pc/partials/inventory-block
+					blockTitle=(localize "FALLOUT.UI.ROBOT_MODULES")
+					createTitle=(localize "FALLOUT.TEMPLATES.Create_Robot_Module")
+					items=itemsByType.robot_mod
+					type="robot_mod"
+				}}
+			</section>
+		</div>
+	</section>
+</div>

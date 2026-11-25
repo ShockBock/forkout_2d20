@@ -1,0 +1,51 @@
+{{!-- Info screen for NPCs and creatures --}}
+<section class="classic-screen classic-screen-info" data-screen="info">
+	<div class="classic-sweep" aria-hidden="true"></div>
+	<div class="classic-zoom">
+	<div class="classic-id">
+		<input class="classic-origin" name="system.origin" type="text"
+			placeholder="{{localize 'FALLOUT.TEMPLATES.Origin'}}"
+			value="{{system.origin}}" data-dtype="String"/>
+		{{#if hasCategory}}
+			{{#select system.category}}
+				<select class="classic-category" name="system.category">
+					{{#if isCreature}}
+						{{#each FALLOUT.CREATURE_CATEGORIES as |item key|}}
+							<option value="{{key}}">{{localize item}}</option>
+						{{/each}}
+					{{else}}
+						{{#each FALLOUT.NPC_CATEGORIES as |item key|}}
+							<option value="{{key}}">{{localize item}}</option>
+						{{/each}}
+					{{/if}}
+				</select>
+			{{/select}}
+		{{/if}}
+
+		<div class="classic-stats">
+			<div class="classic-stat">
+				<label>{{localize "FALLOUT.LEVEL.Level"}}</label>
+				<input data-dtype="Number" min="0" name="system.level.value"
+					type="number" value="{{system.level.value}}"/>
+			</div>
+			{{#unless isCreature}}
+				<div class="classic-stat">
+					<label>{{localize "FALLOUT.TEMPLATES.Luck"}}</label>
+					<input name="system.luckPoints" type="number"
+						value="{{system.luckPoints}}" min="0">
+				</div>
+			{{/unless}}
+			<div class="classic-stat classic-stat-wide">
+				<label>{{localize "FALLOUT.LEVEL.RewardXP"}}</label>
+				<input data-dtype="Number" name="system.level.rewardXP"
+					type="text" value="{{system.level.rewardXP}}"
+					{{#unless disableAutoXpReward}}
+						data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
+						disabled
+					{{/unless}}
+				/>
+			</div>
+		</div>
+	</div>
+	</div>
+</section>
