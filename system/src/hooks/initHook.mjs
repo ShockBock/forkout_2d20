@@ -13,10 +13,11 @@ import { FalloutModuleArt } from "../utils/FalloutModuleArt.mjs";
 import { Roller2D20 } from "../roller/Roller2D20.mjs";
 import APTrackerV2 from "../apps/APTrackerV2.mjs";
 import FalloutChat from "../system/FalloutChat.mjs";
+import FalloutChatBubbles from "../canvas/FalloutChatBubbles.mjs";
 import FalloutCompendiums from "../documents/FalloutCompendiums.mjs";
 import FalloutConditionTracker from "../system/FalloutConditionTracker.mjs";
 import * as FalloutClock from "../system/FalloutClock.mjs";
-import { orderSystemSettings } from "../system/FalloutSettingsOrder.mjs";
+import { addSettingsSections, orderSystemSettings } from "../system/FalloutSettingsOrder.mjs";
 import FalloutLoading from "../apps/FalloutLoading.mjs";
 import FalloutMacros from "../system/FalloutMacros.mjs";
 import FalloutUtils from "../utils/FalloutUtils.mjs";
@@ -24,7 +25,7 @@ import Logger from "../utils/Logger.mjs";
 
 import preloadHandlebarsTemplates from "../templates.mjs";
 import registerHandlebarsHelpers from "../handlebars.mjs";
-import registerSettings from "../settings.mjs";
+import registerSettings, { applyFloatSpeechSettings } from "../settings.mjs";
 import registerTextEditorEnrichers from "../enrichers.mjs";
 
 export async function initHook() {
@@ -66,6 +67,8 @@ export async function initHook() {
 	registerSettings();
 	FalloutClock.initClock();
 	orderSystemSettings();
+	Hooks.on("renderSettingsConfig", addSettingsSections);
+	Hooks.once("setup", applyFloatSpeechSettings);
 
 	const useVariableInitiative = game.settings.get(SYSTEM_ID, "useVariableInitiative");
 	CONFIG.Combat.initiative = {
@@ -84,6 +87,9 @@ export async function initHook() {
 	registerTextEditorEnrichers();
 
 	preloadHandlebarsTemplates();
+
+	// Classic floating speech over tokens
+	CONFIG.Canvas.chatBubblesClass = FalloutChatBubbles;
 
 	FalloutHooks.attach();
 }

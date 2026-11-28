@@ -2,7 +2,8 @@
  * The game clock: Foundry's world time (game.time, which combat and other
  * modules also advance) read through Foundry's calendar.
  *
- * While the game is not paused, game time runs: by default one game minute a
+ * While the game is not paused (nor in-game time, the world setting
+ * "clockPaused"), game time runs: by default one game minute a
  * real minute, faster by the world setting "timeRate" (a whole number, 1 to
  * MAX_RATE). Only the active GM's client moves the clock, once a game minute
  * (or once a real second when that is sooner). It stands still during a
@@ -30,6 +31,15 @@ export function registerClockSettings() {
 	});
 	game.settings.register(SYSTEM_ID, "clockStarted", {
 		scope: "world", config: false, type: Boolean, default: false,
+	});
+	game.settings.register(SYSTEM_ID, "clockPaused", {
+		name: "Pause In-game Time",
+		hint: "The game clock stands still while the game runs.",
+		scope: "world",
+		config: true,
+		type: Boolean,
+		default: false,
+		onChange: () => refreshClockPausedBanner(),
 	});
 }
 
@@ -80,7 +90,8 @@ let lastTick = null;
 let owed = 0; // game seconds run but not yet added to the world time
 
 function clockRuns() {
-	return writer() && !game.paused && !game.combat?.started;
+	return writer() && !game.paused && !game.combat?.started
+		&& !game.settings.get(SYSTEM_ID, "clockPaused");
 }
 
 async function tick() {
@@ -123,11 +134,24 @@ export function refreshSheetDates() {
 	}
 }
 
+/** "In-game time paused" across the top of the screen while in-game time is paused. */
+export function refreshClockPausedBanner() {
+	let banner = document.getElementById("fallout-clock-paused");
+	if (!banner) {
+		banner = document.createElement("div");
+		banner.id = "fallout-clock-paused";
+		banner.textContent = "In-game time paused";
+		document.body.append(banner);
+	}
+	banner.hidden = !game.settings.get(SYSTEM_ID, "clockPaused");
+}
+
 /* ------------------------------------- hooks -------------------------------------- */
 
 export function initClock() {
 	Hooks.on("updateWorldTime", () => refreshSheetDates());
 	Hooks.once("ready", async () => {
+		refreshClockPausedBanner();
 		// The world clock's first start: a new world starts on the Fallout date,
 		// once. An existing world time is left as it is. A world that ran
 		// Foundout's clock before carries its speed over.

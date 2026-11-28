@@ -172,6 +172,38 @@ export default function registerSettings() {
 		type: Boolean,
 	});
 
+	// Float speech: in-character chat over a token's head (FalloutChatBubbles)
+	game.settings.register(SYSTEM_ID, "floatSpeechFontSize", {
+		name: "Font Size",
+		hint: "Size of float speech text (px).",
+		scope: "world",
+		config: true,
+		default: 16,
+		type: Number,
+		range: { min: 10, max: 40, step: 1 },
+		onChange: () => applyFloatSpeechSettings(),
+	});
+
+	game.settings.register(SYSTEM_ID, "floatSpeechHeight", {
+		name: "Height Above Token",
+		hint: "Gap between the token and its float speech (px).",
+		scope: "world",
+		config: true,
+		default: 8,
+		type: Number,
+		range: { min: -50, max: 100, step: 1 },
+	});
+
+	game.settings.register(SYSTEM_ID, "floatSpeechDuration", {
+		name: "Duration",
+		hint: "Seconds on screen. 0: by length, as Foundry times it.",
+		scope: "world",
+		config: true,
+		default: 5,
+		type: Number,
+		range: { min: 0, max: 10, step: 0.5 },
+	});
+
 	game.settings.register(SYSTEM_ID, "useVariableInitiative", {
 		name: "Use Variable Initiative",
 		hint: "If enabled the Variable Initiative method as detailed in the Gamemaster's Guide will be used instead of the base game's fixed initiative method.",
@@ -329,4 +361,10 @@ export default function registerSettings() {
 		default: false,
 		requiresReload: true,
 	});
+}
+
+/** Push the float speech font size to the stylesheet. */
+export function applyFloatSpeechSettings() {
+	const size = game.settings.get(SYSTEM_ID, "floatSpeechFontSize");
+	document.documentElement.style.setProperty("--float-speech-size", `${size}px`);
 }

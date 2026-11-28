@@ -399,3 +399,113 @@
 	margin: 4px auto 0;
 	padding: 0 16px;
 }
+
+/* --------------------------------------------------------------------------
+   Pause: the classic video, centred on the screen, no bar
+   -------------------------------------------------------------------------- */
+
+#pause.classic-pause {
+	top: 50%;
+	left: 50%;
+	width: auto;
+	height: auto;
+	margin: 0;
+	background: none;
+	transform: translate(-50%, -50%);
+	animation: none;
+}
+#pause.classic-pause video {
+	display: block;
+	width: 480px;
+	height: 270px;
+	border: none;
+	box-shadow: none;
+	background: none;
+}
+/* The caption stays for screen readers only */
+#pause.classic-pause figcaption {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip-path: inset(50%);
+	white-space: nowrap;
+}
+
+/* --------------------------------------------------------------------------
+   Speech over tokens: bare JH_FALLOUT text with a black outline, coloured by
+   disposition, no bubble (font: JH_FALLOUT.TTF, Joiro Hatagaya 2002)
+   -------------------------------------------------------------------------- */
+
+@font-face {
+	font-family: "Forkout Speech";
+	src: url("../assets/fonts/JH_FALLOUT.TTF") format("truetype");
+	font-display: block;
+}
+
+:root {
+	--speech-friendly: #3cf800;
+}
+
+/* Plain .chat-bubble too: Foundry measures an unparented copy */
+.chat-bubble,
+#chat-bubbles .chat-bubble:is(.left, .right, .emote, .chatter) {
+	--speech-colour: #fcfc7c;
+	padding: 2px 4px;
+	min-width: 0;
+	max-width: calc(var(--float-speech-size, 16px) * 20);
+	max-height: calc(var(--float-speech-size, 16px) * 7.5);
+	background: none;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	color: var(--speech-colour);
+	font-family: "Forkout Speech", monospace;
+	font-size: var(--float-speech-size, 16px);
+	font-style: normal;
+	line-height: 1.15;
+	text-align: center;
+	text-shadow:
+		-1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000,
+		-1px 0 0 #000, 1px 0 0 #000,
+		-1px 1px 0 #000, 0 1px 0 #000, 1px 1px 0 #000;
+}
+#chat-bubbles .chat-bubble .bubble-content :is(p, span, em, strong) {
+	margin: 0;
+	color: inherit;
+	font: inherit;
+}
+#chat-bubbles .chat-bubble[data-disposition="friendly"] { --speech-colour: var(--speech-friendly); }
+#chat-bubbles .chat-bubble[data-disposition="neutral"] { --speech-colour: #fcfc7c; }
+#chat-bubbles .chat-bubble[data-disposition="hostile"] { --speech-colour: #fc3c3c; }
+#chat-bubbles .chat-bubble[data-disposition="secret"] { --speech-colour: #b4b4b4; }
+
+/* Game Settings: section headings in the Forkout 2d20 tab */
+.fallout-settings-section {
+	margin: 1rem 0 0.25rem;
+	padding-bottom: 0.25rem;
+	border-bottom: 1px solid currentColor;
+	font-size: var(--font-size-16);
+}
+
+/* "In-game time paused": top centre, in the float speech style */
+#fallout-clock-paused {
+	position: fixed;
+	top: 8px;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	text-align: center;
+	pointer-events: none;
+	color: var(--speech-friendly);
+	font-family: "Forkout Speech", monospace;
+	font-size: var(--float-speech-size, 16px);
+	line-height: 1.15;
+	text-shadow:
+		-1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000,
+		-1px 0 0 #000, 1px 0 0 #000,
+		-1px 1px 0 #000, 0 1px 0 #000, 1px 1px 0 #000;
+}
+#fallout-clock-paused[hidden] {
+	display: none;
+}

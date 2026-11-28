@@ -2,7 +2,7 @@
 	"id": "fallout",
 	"title": "Forkout 2d20",
 	"description": "Forkout 2d20: a classic Fallout 1/2 styled fork of the unofficial Fallout 2d20 system by Muttley, for the Fallout RPG from Modiphius Entertainment Ltd.",
-	"version": "12.4.0",
+	"version": "12.5.0",
 	"compatibility": {
 		"minimum": "14",
 		"verified": "14"

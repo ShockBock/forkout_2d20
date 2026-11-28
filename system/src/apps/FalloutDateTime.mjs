@@ -69,7 +69,7 @@ export default class FalloutDateTime extends ApplicationV2 {
 	}
 
 	/** Settings shown as checkboxes here, by name. */
-	static TOGGLES = ["conditionsSkipMissingPlayers"];
+	static TOGGLES = ["clockPaused", "conditionsSkipMissingPlayers"];
 
 	#showSetting(setting) {
 		const [ns, key] = setting.key.split(".");
@@ -92,6 +92,7 @@ export default class FalloutDateTime extends ApplicationV2 {
 		const weather = Object.entries({ normal: "Normal", hot: "Hot (above 32\u00b0C)", cold: "Cold (below 5\u00b0C)" })
 			.map(([k, v]) => `<option value="${k}" ${k === w ? "selected" : ""}>${v}</option>`)
 			.join("");
+		const timePaused = game.settings.get(SYSTEM_ID, "clockPaused");
 		const skip = game.settings.get(SYSTEM_ID, "conditionsSkipMissingPlayers");
 		const skipHint = game.settings.settings.get(`${SYSTEM_ID}.conditionsSkipMissingPlayers`)?.hint ?? "";
 		const step = (sec, label) =>
@@ -125,7 +126,11 @@ export default class FalloutDateTime extends ApplicationV2 {
 					</div>
 					<p class="hint fallout-rate-hint">${rateHint(rate)}</p>
 				</div>
-				<p class="hint">Runs while unpaused; stops in combat.</p>
+				<div class="form-group">
+					<label for="fallout-dt-paused">Pause In-game Time</label>
+					<div class="form-fields"><input type="checkbox" id="fallout-dt-paused" name="clockPaused" ${timePaused ? "checked" : ""}></div>
+				</div>
+				<p class="hint">Runs while unpaused; stops in combat or when paused here.</p>
 			</fieldset>
 			<fieldset class="fallout-weather">
 				<div class="form-group">
